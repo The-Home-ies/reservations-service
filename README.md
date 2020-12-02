@@ -8,45 +8,21 @@
 
 ## Table of Contents
 
+1. [CRUD Operations](#CRUD)
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
-
-## Usage
-
-- Access the individual component through http://18.217.62.125:3002/listings/5/
-- Access the site in whole through http://3.20.233.115:3000/5/
-- Change listings by modifying the numerical value after the site, e.g. from http://3.20.233.115:3000/5/ to http://3.20.233.115:3000/10/
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install
-npm run seed
-npm run server
-npm run build
-
 
 ## CRUD Operations
 
   ### Reservations
 
   #### Create / POST
-  1. Endpoint
+  **Endpoint**
     - /listings/:ids
-  2. Path params
+  **Path params**
     - id
-  3. Request body
+  **Request body**
     - {
         id: Number,
         owner: String,
@@ -58,7 +34,7 @@ npm run build
          service: Number,
         }
       }
-  4. Response object
+  **Response object**
     - HTTP Status Code 200
 
   #### Read / GET
@@ -101,4 +77,28 @@ npm run build
     - {id: number}
   4. Response object
     - HTTP Status Code 200
+
+## Usage
+
+- Access the individual component through http://18.217.62.125:3002/listings/5/
+- Access the site in whole through http://3.20.233.115:3000/5/
+- Change listings by modifying the numerical value after the site, e.g. from http://3.20.233.115:3000/5/ to http://3.20.233.115:3000/10/
+
+## Requirements
+
+An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
+
+- Node 6.13.0
+
+## Development
+
+### Installing Dependencies
+
+From within the root directory:
+
+```sh
+npm install
+npm run seed
+npm run server
+npm run build
 
