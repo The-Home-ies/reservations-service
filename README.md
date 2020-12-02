@@ -19,25 +19,50 @@
 
 ### Add new reservation
   > Create / POST
+- Allows you to create a reservation for specified dates, number of adults, children, and infants
   1. Endpoint
-    - /listings/:ids
+    - /api/listings/:id/newReservation
   2. Path params
     - `id`
   3. Request body
   ```json
       {
         "id": "Number",
+        "reservationId": "Number",
         "name": "String",
-        "reserved": ["Date"]
+        "checkin": "Date",
+        "checkout": "Date",
+        "adults": "Number",
+        "children": "Number",
+        "infants": "Number"
       }
   ```
   4. Response object
-    - HTTP Status Code 200
+    - HTTP Status Code 201
 
-### Retrieve reservations
+### Retrieve Listings
   > Read / GET
   1. Endpoint
-    - /listings/:id
+    - /api/listings/
+  2. Response object - Array of JSON objects representing available listings
+  ```json
+      [
+        {
+          "id": "Number",
+          "reserved": ["reservation objects"],
+          "fees": {
+            "pernight": "Number",
+            "cleaning": "Number",
+            "service": "Number"
+          }
+        }
+      ]
+  ```
+
+### Retrieve reservation data for one listing
+  > Read / GET
+  1. Endpoint
+    - /api/listings/:id
   2. Path params
     - `id`
   3. Request body
@@ -46,8 +71,6 @@
   ```json
       {
         "id": "Number",
-        "owner": "String",
-        "name": "String",
         "reserved": ["Date"],
         "fees": {
          "pernight": "Number",
@@ -60,14 +83,20 @@
 ### Update reservation info
   > Update / PUT
   1. Endpoint
-    - /listings/:id
+    - /api/listings/:id/updateReservation
   2. Path params
     - `id`
   3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
+        "id": "Number",
+        "reservationId": "Number",
         "name": "String",
-        "reserved": ["Date"]
+        "checkin": "Date",
+        "checkout": "Date",
+        "adults": "Number",
+        "children": "Number",
+        "infants": "Number"
       }
   ```
   4. Response object
@@ -75,13 +104,13 @@
 
   > Delete / DELETE - Delete Reservation
   1. Endpoint
-    - /listings/:id
+    - /api/listings/:id/deleteReservation
   2. Path params
     - `id`
   3. Request body
-    `{"id": "Number"}`
+    `{"listingId": "Number", "reservationId": "Number"}`
   4. Response object
-    - HTTP Status Code 200
+    - HTTP Status Code 204
 
 ## Usage
 
