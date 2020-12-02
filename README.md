@@ -18,11 +18,11 @@
   ### Reservations
 
   #### Create / POST
-  **Endpoint**
+  1. Endpoint
     - /listings/:ids
-  **Path params**
+  2. Path params
     - id
-  **Request body**
+  3. Request body
     - {
         id: Number,
         owner: String,
@@ -34,7 +34,7 @@
          service: Number,
         }
       }
-  **Response object**
+  4. Response object
     - HTTP Status Code 200
 
   #### Read / GET
