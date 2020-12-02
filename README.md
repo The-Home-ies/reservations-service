@@ -63,7 +63,7 @@
       }
   ```
 
-### Update reservation date
+### Update reservation info
   > Update / PUT
   1. Endpoint
     - /listings/:id
@@ -72,7 +72,6 @@
   3. Request body
   ```json
       {
-        "id": "Number",
         "owner": "String",
         "name": "String",
         "reserved": ["Date"],
