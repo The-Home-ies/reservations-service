@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 const faker = require('faker');
 
-/**
+/*
  * Fee Generation
  */
 function generateFees() {
@@ -17,11 +17,13 @@ function generateFees() {
 function generateListingOwner() {
   return `${faker.name.firstName()} ${faker.name.lastName()}`;
 }
+
 function generateListingName() {
   const generate = faker.address;
   const randomSuffixes = [generate.streetSuffix, generate.secondaryAddress, generate.streetName];
   return `${faker.company.companyName()} ${faker.commerce.department()} ${randomSuffixes[Math.floor(Math.random() * randomSuffixes.length)]()}`;
 }
+
 function generateListing(count) {
   const listing = {};
   listing.id = count;

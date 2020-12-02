@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-/**
+/*
  * Schemas
  */
 const listingSchema = new mongoose.Schema({
@@ -13,7 +13,9 @@ const listingSchema = new mongoose.Schema({
     service: Number,
   },
 });
+
 const Listing = mongoose.model('Listing', listingSchema);
+
 module.exports = {
   listingModel: Listing,
 };

@@ -1,15 +1,5 @@
-# Ailpup
-
-Reservations component for a vacation rental marketplace site
-<div align="center">
-  <img src="https://ailpup-fec-reservations.s3-us-west-1.amazonaws.com/WholeSite.png" height="450">
-</div>
-<div align="center">
-  <img src="https://ailpup-fec-reservations.s3-us-west-1.amazonaws.com/CalendarComponent.png" height="275">
-  <img src="https://ailpup-fec-reservations.s3-us-west-1.amazonaws.com/FeesComponent.png" height="275">
-  <img src="https://ailpup-fec-reservations.s3-us-west-1.amazonaws.com/GuestsComponent.png" height="275">
-</div>
-
+# Project Name
+> SDC
 ## Related Projects
 
   - https://github.com/spicy-boiz/photo-carousel-service
@@ -45,3 +35,70 @@ npm install
 npm run seed
 npm run server
 npm run build
+
+
+## CRUD Operations
+
+  ### Reservations
+
+  ##### Create / POST
+  1. Endpoint
+    - /listings/:ids
+  2. Path params
+    - id
+  3. Request body
+    - {
+        id: Number,
+        owner: String,
+        name: String,
+        reserved: [Date],
+        fees: {
+         pernight: Number,
+         cleaning: Number,
+         service: Number,
+        }
+      }
+  4. Response object
+    - HTTP Status Code 200
+
+  ##### Read / GET
+  1. Endpoint
+    - /listings/:id
+  2. Path params
+    - id
+  3. Request body
+    - {id: number}
+  4. Response object
+    - {
+        id: Number,
+        owner: String,
+        name: String,
+        reserved: [Date],
+        fees: {
+         pernight: Number,
+         cleaning: Number,
+         service: Number,
+        }
+      }
+
+  ##### Update / PUT - Update reservation date
+  1. Endpoint
+    - /listings/:id
+  2. Path params
+    - id
+  3. Request body
+    - {
+      }
+  4. Response object
+    - HTTP Status Code 200
+
+  ##### Delete / DELETE - Delete Reservation
+  1. Endpoint
+    - /listings/:id
+  2. Path params
+    - id
+  3. Request body
+    - {id: number}
+  4. Response object
+    - HTTP Status Code 200
+

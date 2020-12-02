@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const morgan = require('morgan');
 const Helpers = require('../db/models.js');
+const mongoose = require('mongoose');
 
 const app = express();
 
@@ -17,12 +18,33 @@ app.get('/api/listings/', (req, res) => {
       res.send(JSON.stringify(listings, 0, 2));
     });
 });
+
 app.get('/api/listings/:id', (req, res) => {
   Helpers.listingModel.find({ id: req.params.id })
     .then((listings) => {
       res.header('Content-Type', 'application/json');
       res.send(JSON.stringify(listings, 0, 2));
     });
+});
+
+app.post('/api/listings/:id', (req, res) => {
+  Helpers.listingModel.create(req.body, (err) => {
+    if (err) {
+      res.sendStatus(404);
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
+app.delete('/api/listings/:id', (req, res) => {
+  Helpers.listingModel.deleteOne({ id: req.params.id }, (err) => {
+    if (err) {
+      res.sendStatus(404);
+    } else {
+      res.sendStatus(200);
+    }
+  });
 });
 
 module.exports = app;
