@@ -41,7 +41,7 @@ npm run build
 
   ### Reservations
 
-  ##### Create / POST
+  #### Create / POST
   1. Endpoint
     - /listings/:ids
   2. Path params
@@ -61,7 +61,7 @@ npm run build
   4. Response object
     - HTTP Status Code 200
 
-  ##### Read / GET
+  #### Read / GET
   1. Endpoint
     - /listings/:id
   2. Path params
@@ -81,7 +81,7 @@ npm run build
         }
       }
 
-  ##### Update / PUT - Update reservation date
+  #### Update / PUT - Update reservation date
   1. Endpoint
     - /listings/:id
   2. Path params
@@ -92,7 +92,7 @@ npm run build
   4. Response object
     - HTTP Status Code 200
 
-  ##### Delete / DELETE - Delete Reservation
+  #### Delete / DELETE - Delete Reservation
   1. Endpoint
     - /listings/:id
   2. Path params
