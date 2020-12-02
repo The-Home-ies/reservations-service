@@ -23,7 +23,7 @@
     - /listings/:ids
   2. Path params
     * `id`
-  3. Request body
+  3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
         "id": "Number",
