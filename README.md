@@ -23,10 +23,9 @@
     - /listings/:ids
   2. Path params
     * `id`
-  3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
+  3. Request body
   ```json
       {
-        "id": "Number",
         "owner": "String",
         "name": "String",
         "reserved": ["Date"],
@@ -69,7 +68,7 @@
     - /listings/:id
   2. Path params
     * `id`
-  3. Request body
+  3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
         "owner": "String",
