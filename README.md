@@ -61,6 +61,7 @@
 
 ### Retrieve reservation data for one listing
   > Read / GET
+  - Allows you to get all reservations for a listing
   1. Endpoint
     - /api/listings/:id
   2. Path params
@@ -70,7 +71,7 @@
   4. Response object
   ```json
       {
-        "id": "Number",
+        "listingId": "Number",
         "reserved": ["Date"],
         "fees": {
          "pernight": "Number",
@@ -82,6 +83,7 @@
 
 ### Update reservation info
   > Update / PUT
+  - Allows you to update reservation info for specified dates, number of adults, children, and infants
   1. Endpoint
     - /api/listings/:id/updateReservation
   2. Path params
@@ -103,12 +105,13 @@
     - HTTP Status Code 200
 
   > Delete / DELETE - Delete Reservation
+  - Allows you to delete a reservation from a listing at a specific reservation ID
   1. Endpoint
     - /api/listings/:id/deleteReservation
   2. Path params
     - `id`
   3. Request body
-    `{"listingId": "Number", "reservationId": "Number"}`
+    `{"id": "Number", "reservationId": "Number"}`
   4. Response object
     - HTTP Status Code 204
 
