@@ -36,7 +36,7 @@
          "service": "Number"
         }
       }
-      ```
+  ```
   4. Response object
     - HTTP Status Code 200
 
@@ -47,7 +47,7 @@
   2. Path params
     * `id`
   3. Request body
-    - {id: number}
+    - `{"id": "Number"}`
   4. Response object
   ```json
       {
@@ -61,7 +61,7 @@
          "service": "Number"
         }
       }
-      ```
+  ```
 
 ### Update reservation date
   > Update / PUT
@@ -82,7 +82,7 @@
          "service": "Number"
         }
       }
-      ```
+  ```
   4. Response object
     - HTTP Status Code 200
 
@@ -92,7 +92,7 @@
   2. Path params
     * `id`
   3. Request body
-    `{id: number}`
+    `{"id": "Number"}`
   4. Response object
     - HTTP Status Code 200
 
