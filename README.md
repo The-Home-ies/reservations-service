@@ -22,19 +22,21 @@
   1. Endpoint
     - /listings/:ids
   2. Path params
-    - id
+    * `id`
   3. Request body
-    - {
-        id: Number,
-        owner: String,
-        name: String,
-        reserved: [Date],
-        fees: {
-         pernight: Number,
-         cleaning: Number,
-         service: Number,
+  ```json
+      {
+        "id": "Number",
+        "owner": "String",
+        "name": "String",
+        "reserved": ["Date"],
+        "fees": {
+         "pernight": "Number",
+         "cleaning": "Number",
+         "service": "Number"
         }
       }
+      ```
   4. Response object
     - HTTP Status Code 200
 
@@ -43,31 +45,44 @@
   1. Endpoint
     - /listings/:id
   2. Path params
-    - id
+    * `id`
   3. Request body
     - {id: number}
   4. Response object
-    - {
-        id: Number,
-        owner: String,
-        name: String,
-        reserved: [Date],
-        fees: {
-         pernight: Number,
-         cleaning: Number,
-         service: Number,
+  ```json
+      {
+        "id": "Number",
+        "owner": "String",
+        "name": "String",
+        "reserved": ["Date"],
+        "fees": {
+         "pernight": "Number",
+         "cleaning": "Number",
+         "service": "Number"
         }
       }
+      ```
 
 ### Update reservation date
   > Update / PUT
   1. Endpoint
     - /listings/:id
   2. Path params
-    - id
+    * `id`
   3. Request body
-    - {
+  ```json
+      {
+        "id": "Number",
+        "owner": "String",
+        "name": "String",
+        "reserved": ["Date"],
+        "fees": {
+         "pernight": "Number",
+         "cleaning": "Number",
+         "service": "Number"
+        }
       }
+      ```
   4. Response object
     - HTTP Status Code 200
 
@@ -75,9 +90,9 @@
   1. Endpoint
     - /listings/:id
   2. Path params
-    - id
+    * `id`
   3. Request body
-    - {id: number}
+    `{id: number}`
   4. Response object
     - HTTP Status Code 200
 
