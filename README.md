@@ -13,11 +13,12 @@
 1. [Requirements](#requirements)
 1. [Development](#development)
 
-## CRUD Operations
+# CRUD Operations
 
-  ### Reservations
+  ## Reservations
 
-  #### Create / POST - Add new reservation
+### Add new reservation
+  > Create / POST
   1. Endpoint
     - /listings/:ids
   2. Path params
@@ -37,7 +38,8 @@
   4. Response object
     - HTTP Status Code 200
 
-  #### Read / GET - Retrieve reservations
+### Retrieve reservations
+  > Read / GET
   1. Endpoint
     - /listings/:id
   2. Path params
@@ -57,7 +59,8 @@
         }
       }
 
-  #### Update / PUT - Update reservation date
+### Update reservation date
+  > Update / PUT
   1. Endpoint
     - /listings/:id
   2. Path params
@@ -68,7 +71,7 @@
   4. Response object
     - HTTP Status Code 200
 
-  #### Delete / DELETE - Delete Reservation
+  > Delete / DELETE - Delete Reservation
   1. Endpoint
     - /listings/:id
   2. Path params

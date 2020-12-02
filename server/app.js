@@ -47,4 +47,14 @@ app.delete('/api/listings/:id', (req, res) => {
   });
 });
 
+app.put('/api/listing/:id', (req, res) => {
+  Helpers.listingModel.findOneAndUpdate({ id: req.params.id, reserved: [] }, (err) => {
+    if (err) {
+      res.sendStatus(404);
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
 module.exports = app;
