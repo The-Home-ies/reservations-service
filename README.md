@@ -22,7 +22,7 @@
   1. Endpoint
     - /listings/:ids
   2. Path params
-    * `id`
+    - `id`
   3. Request body
   ```json
       {
@@ -44,7 +44,7 @@
   1. Endpoint
     - /listings/:id
   2. Path params
-    * `id`
+    - `id`
   3. Request body
     - `{"id": "Number"}`
   4. Response object
@@ -67,7 +67,7 @@
   1. Endpoint
     - /listings/:id
   2. Path params
-    * `id`
+    - `id`
   3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
@@ -88,7 +88,7 @@
   1. Endpoint
     - /listings/:id
   2. Path params
-    * `id`
+    - `id`
   3. Request body
     `{"id": "Number"}`
   4. Response object
