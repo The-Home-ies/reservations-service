@@ -17,7 +17,7 @@
 
   ### Reservations
 
-  #### Create / POST
+  #### Create / POST - Add new reservation
   1. Endpoint
     - /listings/:ids
   2. Path params
@@ -37,7 +37,7 @@
   4. Response object
     - HTTP Status Code 200
 
-  #### Read / GET
+  #### Read / GET - Retrieve reservations
   1. Endpoint
     - /listings/:id
   2. Path params
