@@ -26,14 +26,9 @@
   3. Request body
   ```json
       {
-        "owner": "String",
+        "id": "Number",
         "name": "String",
-        "reserved": ["Date"],
-        "fees": {
-         "pernight": "Number",
-         "cleaning": "Number",
-         "service": "Number"
-        }
+        "reserved": ["Date"]
       }
   ```
   4. Response object
@@ -71,14 +66,8 @@
   3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
-        "owner": "String",
         "name": "String",
-        "reserved": ["Date"],
-        "fees": {
-         "pernight": "Number",
-         "cleaning": "Number",
-         "service": "Number"
-        }
+        "reserved": ["Date"]
       }
   ```
   4. Response object
