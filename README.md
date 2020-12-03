@@ -17,6 +17,26 @@
 
   ## Reservations
 
+### Add new listing
+  > Create / POST
+  - Allows you to create a listing for a property
+  1. Endpoint
+    - /api/listings/newListing
+  2. Request body
+  ```json
+      {
+        "id": "Number",
+        "reverved": [],
+        "fees": {
+          "pernight": "Number",
+          "cleaning": "Number",
+          "service": "Number"
+        }
+      }
+  ```
+  3. Response object
+    - HTTP Status Code 201
+
 ### Add new reservation
   > Create / POST
   - Allows you to create a reservation for specified dates, number of adults, children, and infants
@@ -29,7 +49,6 @@
       {
         "id": "Number",
         "reservationId": "Number",
-        "name": "String",
         "checkin": "Date",
         "checkout": "Date",
         "adults": "Number",
@@ -49,7 +68,7 @@
       [
         {
           "id": "Number",
-          "reserved": ["reservation objects"],
+          "reserved": [],
           "fees": {
             "pernight": "Number",
             "cleaning": "Number",
@@ -66,13 +85,11 @@
     - /api/listings/:id
   2. Path params
     - `id`
-  3. Request body
-    - `{"id": "Number"}`
-  4. Response object
+  3. Response object
   ```json
       {
-        "listingId": "Number",
-        "reserved": ["Date"],
+        "id": "Number",
+        "reserved": [],
         "fees": {
          "pernight": "Number",
          "cleaning": "Number",
@@ -91,9 +108,7 @@
   3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
-        "id": "Number",
         "reservationId": "Number",
-        "name": "String",
         "checkin": "Date",
         "checkout": "Date",
         "adults": "Number",
@@ -104,14 +119,25 @@
   4. Response object
     - HTTP Status Code 200
 
-  > Delete / DELETE - Delete Reservation
+### Delete Listing
+  > Delete / DELETE 
+  - Allows you to delete a Listing
+  1. Endpoint
+    - /api/listings/:id/deleteListing
+  2. Path params
+    - `id`
+  3. Response object
+    - HTTP Status Code 204
+
+### Delete A Reservation
+  > Delete / DELETE 
   - Allows you to delete a reservation from a listing at a specific reservation ID
   1. Endpoint
     - /api/listings/:id/deleteReservation
   2. Path params
     - `id`
   3. Request body
-    `{"id": "Number", "reservationId": "Number"}`
+    `{"reservationId": "Number"}`
   4. Response object
     - HTTP Status Code 204
 
