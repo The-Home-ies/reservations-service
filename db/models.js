@@ -14,8 +14,21 @@ const listingSchema = new mongoose.Schema({
   },
 });
 
+const reservationSchema = new mongoose.Schema({
+  id: Number,
+  reservationId: Number,
+  name:  String,
+  checkin:  Date,
+  checkout:  Date,
+  adults:  Number,
+  children:  Number,
+  infants:  Number,
+});
+
 const Listing = mongoose.model('Listing', listingSchema);
+const Reservation = mongoose.model('Reservation', reservationSchema);
 
 module.exports = {
   listingModel: Listing,
+  reservationModel: Reservation,
 };

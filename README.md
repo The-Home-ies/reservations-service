@@ -19,7 +19,7 @@
 
 ### Add new reservation
   > Create / POST
-- Allows you to create a reservation for specified dates, number of adults, children, and infants
+  - Allows you to create a reservation for specified dates, number of adults, children, and infants
   1. Endpoint
     - /api/listings/:id/newReservation
   2. Path params

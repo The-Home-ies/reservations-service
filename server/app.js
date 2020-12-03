@@ -27,11 +27,11 @@ app.get('/api/listings/:id', (req, res) => {
     });
 });
 
-// app.post('/api/listings/:id', (req, res) => {
-//   Helpers.listingModel.create(req.body)
-//     .then(() => res.sendStatus(200))
-//     .catch(() => res.sendStatus(404));
-// });
+app.post('/api/listings/:id/newReservation', (req, res) => {
+  Helpers.reservationModel.create(req.body)
+    .then(() => res.sendStatus(200))
+    .catch(() => res.sendStatus(404));
+});
 
 // app.delete('/api/listings/:id', (req, res) => {
 //   Helpers.listingModel.deleteOne({ id: req.params.id })
