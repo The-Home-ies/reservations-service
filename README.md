@@ -21,12 +21,13 @@
   > Create / POST
   - Allows you to create a listing for a property
   1. Endpoint
-    - /api/listings/newListing
+    - /api/listings
   2. Request body
   ```json
       {
         "id": "Number",
-        "reverved": [],
+        "name": "String",
+        "maxGuests": "Number",
         "fees": {
           "pernight": "Number",
           "cleaning": "Number",
@@ -41,14 +42,15 @@
   > Create / POST
   - Allows you to create a reservation for specified dates, number of adults, children, and infants
   1. Endpoint
-    - /api/listings/:id/newReservation
+    - /api/listings/:id
   2. Path params
-    - `id`
+    - `id` - listing ID
   3. Request body
   ```json
       {
         "id": "Number",
-        "reservationId": "Number",
+        "reservation_id": "Number",
+        "name": "String",
         "checkin": "Date",
         "checkout": "Date",
         "adults": "Number",
@@ -62,34 +64,33 @@
 ### Retrieve Listings
   > Read / GET
   1. Endpoint
-    - /api/listings/
+    - /api/listings
   2. Response object - Array of JSON objects representing available listings
   ```json
-      [
-        {
-          "id": "Number",
-          "reserved": [],
-          "fees": {
-            "pernight": "Number",
-            "cleaning": "Number",
-            "service": "Number"
-          }
+      [{
+        "id": "Number",
+        "name": "String",
+        "maxGuests": "Number",
+        "fees": {
+          "pernight": "Number",
+          "cleaning": "Number",
+          "service": "Number"
         }
-      ]
+      }...]
   ```
-
 ### Retrieve reservation data for one listing
   > Read / GET
-  - Allows you to get all reservations for a listing
+  - Allows you to get reservation data from a listing
   1. Endpoint
-    - /api/listings/:id
+    - /api/listings/:id/:reservationId
   2. Path params
-    - `id`
+    - `id` - listing ID
+    - `reservationId` - reservation ID
   3. Response object
   ```json
       {
         "id": "Number",
-        "reserved": [],
+        "name": "String",
         "fees": {
          "pernight": "Number",
          "cleaning": "Number",
@@ -98,17 +99,18 @@
       }
   ```
 
-### Update reservation info
+### Update listing info
   > Update / PUT
-  - Allows you to update reservation info for specified dates, number of adults, children, and infants
+  - Allows you to update listing info
   1. Endpoint
-    - /api/listings/:id/updateReservation
+    - /api/listings/:id
   2. Path params
-    - `id`
+    - `id` - listing ID
   3. Request body - Expects JSON with any of the following keys (include only keys to be updated)
   ```json
       {
         "reservationId": "Number",
+        "name": "String",
         "checkin": "Date",
         "checkout": "Date",
         "adults": "Number",
@@ -123,9 +125,9 @@
   > Delete / DELETE 
   - Allows you to delete a Listing
   1. Endpoint
-    - /api/listings/:id/deleteListing
+    - /api/listings/:id
   2. Path params
-    - `id`
+    - `id` - listing ID
   3. Response object
     - HTTP Status Code 204
 
@@ -133,12 +135,10 @@
   > Delete / DELETE 
   - Allows you to delete a reservation from a listing at a specific reservation ID
   1. Endpoint
-    - /api/listings/:id/deleteReservation
+    - /api/reservation/:id
   2. Path params
-    - `id`
-  3. Request body
-    `{"reservationId": "Number"}`
-  4. Response object
+    - `id` - reservation ID
+  3. Response object
     - HTTP Status Code 204
 
 ## Usage
