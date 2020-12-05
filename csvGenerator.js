@@ -2,7 +2,7 @@ const fs = require('fs');
 const csvWriter = require('csv-write-stream');
 const faker = require('faker');
 const debug = require('debug')('app:gen:psql');
-require('events').EventEmitter.defaultMaxListeners = 100000;
+require('events').EventEmitter.defaultMaxListeners = 1000000;
 
 const getRandomNum = (min, max) => Math.floor((Math.random() * (max - min) ) + min);
 
@@ -10,7 +10,7 @@ const writeUsers = fs.createWriteStream('./csv/users.csv');
 writeUsers.write('id,name\n', 'utf8');
 
 function writeTenMillionUsers(writer, encoding, callback) {
-  let i = 100;
+  let i = 10000;
   let id = 0;
   write();
   function write() {
@@ -21,7 +21,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
       const name = faker.name.findName();
       const data = `${id},${name}\n`;
       if (i === 0) {
-        writer.write(data, encoding, callback);
+       writer.write(data, encoding, callback);
       } else {
         ok = writer.write(data, encoding);
       }
@@ -36,10 +36,10 @@ const writeListings = fs.createWriteStream('./csv/listings.csv');
 writeListings.write('id,name,max_guests,max_stay,review_count,per_night,cleaning,service\n', 'utf8');
 
 function writeOneMillionListings(writer, encoding, callback) {
-  let i = 10;
+  let i = 1000;
   let id = 0;
   write();
-  function write() {
+  async function write() {
     let ok = true;
     let reservationId = 0;
     const startDate = new Date();
@@ -57,7 +57,7 @@ function writeOneMillionListings(writer, encoding, callback) {
         service: getRandomNum(20, 101),
       };
       const data = `${listingInfo.id},${listingInfo.name},${listingInfo.max_guests},${listingInfo.max_stay},${listingInfo.review_count},${listingInfo.per_night},${listingInfo.cleaning},${listingInfo.service}\n`;
-      generateBookings(reservationId + 1, listingInfo.review_count, startDate, listingInfo);
+      await generateBookings(reservationId + 1, listingInfo.review_count, startDate, listingInfo);
       reservationId += listingInfo.review_count;
       if (i === 0) {
         writer.write(data, encoding, callback);
@@ -72,7 +72,7 @@ function writeOneMillionListings(writer, encoding, callback) {
 }
 
 const bookingsWriter = csvWriter();
- const generateBookings = async (startingId, reviewCount, startDate, listingInfo) => {
+ const generateBookings = (startingId, reviewCount, startDate, listingInfo) => {
    bookingsWriter.pipe(fs.createWriteStream('./csv/bookings.csv'));
 
    const calculateDate = (date, days) => {
@@ -92,7 +92,7 @@ const bookingsWriter = csvWriter();
      const stayLength = getRandomNum(1, listingInfo.max_stay + 1);
      checkin = calculateDate(startDate, getRandomNum(1, 8));
 
-     await bookingsWriter.write({
+     bookingsWriter.write({
        id: startingId + i,
        checkin,
        checkout: calculateDate(checkin, getRandomNum(1, listingInfo.max_stay + 1)),
@@ -101,17 +101,15 @@ const bookingsWriter = csvWriter();
        infants,
        total_cost: (listingInfo.per_night * stayLength) + listingInfo.cleaning + listingInfo.service,
        listing_id: listingInfo.id,
-       user_id: getRandomNum(1, 1000),
+       user_id: getRandomNum(1, 1000000),
      }, () => { bookingsWriter.end(); });
      checkin = calculateDate(checkin, stayLength);
    }
  };
 
-const generateData = async () => {
-  debug('start');
-  await writeTenMillionUsers(writeUsers, 'utf8', () => { writeUsers.end(); });
-  await writeOneMillionListings(writeListings, 'utf8', () => { writeUsers.end(); });
-  debug('done');
+function generateData() {
+  writeTenMillionUsers(writeUsers, 'utf8', () => { writeUsers.end(); });
+  writeOneMillionListings(writeListings, 'utf8', () => { writeListings.end(); });
 };
 
 generateData();
