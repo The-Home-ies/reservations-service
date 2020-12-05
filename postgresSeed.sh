@@ -10,6 +10,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Database Variable Definitions
 USER="meeko"
+DATABASE="reservations"
 
 # if parameter 1 is not passed as argument default users to be generated is 10000000
 # if parameter 2 is not passed as argument default listings to be generated is 1000000
@@ -28,6 +29,6 @@ LISTINGSFP="$DIR/csv/postgres/listings.csv"
 BOOKINGSFP="$DIR/csv/postgres/bookings.csv"
 
 ### Import .csv files to seed Database ###
-psql -U $USER -c "\copy reservations.users(id,name) FROM '$USERSFP' CSV HEADER"
-psql -U $USER -c "\copy reservations.listings(id,name,max_guests,max_stay,review_count,per_night,cleaning,service) FROM '$LISTINGSFP' CSV HEADER"
-psql -U $USER -c "\copy reservations.bookings(id,name,checkin,checkout,adults,children,infants,total_cost,listing_id,user_id) FROM '$BOOKINGSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\copy users(id,name) FROM '$USERSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\copy listings(id,name,max_guests,max_stay,review_count,per_night,cleaning,service) FROM '$LISTINGSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\copy bookings(id,name,checkin,checkout,adults,children,infants,total_cost,listing_id,user_id) FROM '$BOOKINGSFP' CSV HEADER"

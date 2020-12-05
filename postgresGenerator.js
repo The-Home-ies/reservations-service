@@ -37,6 +37,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
 const listings = argv.listings;
 const writeListings = fs.createWriteStream('./csv/postgres/listings.csv');
 writeListings.write('id,name,max_guests,max_stay,review_count,per_night,cleaning,service\n', 'utf8');
+let reservationId = 1;
 
 function writeOneMillionListings(writer, encoding, callback) {
   let i = listings || 1000000;
@@ -44,7 +45,6 @@ function writeOneMillionListings(writer, encoding, callback) {
   write();
   async function write() {
     let ok = true;
-    let reservationId = 1;
     const startDate = new Date();
     do {
       i--;

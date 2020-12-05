@@ -1,12 +1,18 @@
-DROP SCHEMA IF EXISTS reservations CASCADE;
-CREATE SCHEMA reservations;
+DROP DATABASE IF EXISTS reservations;
+CREATE DATABASE reservations;
 
-CREATE TABLE reservations.users (
+\c reservations;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   name VARCHAR(70)
 );
 
-CREATE TABLE reservations.listings (
+DROP TABLE IF EXISTS listings;
+
+CREATE TABLE listings (
   id SERIAL PRIMARY KEY,
   name VARCHAR(70),
   max_guests INT NOT NULL,
@@ -17,7 +23,9 @@ CREATE TABLE reservations.listings (
   service INT NOT NULL
 );
 
-CREATE TABLE reservations.bookings (
+DROP TABLE IF EXISTS bookings;
+
+CREATE TABLE bookings (
   id SERIAL PRIMARY KEY,
   name VARCHAR(70),
   checkin VARCHAR(70),
@@ -26,7 +34,7 @@ CREATE TABLE reservations.bookings (
   children INT,
   infants INT,
   total_cost INT,
-  listing_id INT REFERENCES reservations.listings(id) NOT NULL,
-  user_id INT REFERENCES reservations.users(id)
+  listing_id INT REFERENCES listings(id) NOT NULL,
+  user_id INT REFERENCES users(id)
 );
 
