@@ -102,19 +102,16 @@ const bookingsWriter = csvWriter();
        total_cost: (listingInfo.per_night * stayLength) + listingInfo.cleaning + listingInfo.service,
        listing_id: listingInfo.id,
        user_id: getRandomNum(1, 1000),
-     }, () => { 
-       bookingsWriter.end();
-       bookingsWriter.on('finish', () => {
-         debug('done');
-       })
-     });
+     }, () => { bookingsWriter.end(); });
      checkin = calculateDate(checkin, stayLength);
    }
  };
 
 const generateData = async () => {
+  debug('start');
   await writeTenMillionUsers(writeUsers, 'utf8', () => { writeUsers.end(); });
   await writeOneMillionListings(writeListings, 'utf8', () => { writeUsers.end(); });
+  debug('done');
 };
 
 generateData();
