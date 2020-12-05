@@ -1,6 +1,7 @@
 const fs = require('fs');
 const csvWriter = require('csv-write-stream');
 const faker = require('faker');
+const debug = require('debug')('app:gen:psql');
 require('events').EventEmitter.defaultMaxListeners = 100000;
 
 const usersWriter = csvWriter();
@@ -9,10 +10,10 @@ const bookingsWriter = csvWriter();
 
 const getRandomNum = (min, max) => Math.floor((Math.random() * (max - min) ) + min);
 
-const generateUsers = () => {
+const generateUsers = async () => {
   usersWriter.pipe(fs.createWriteStream('./csv/users.csv'));
   for(let i = 1; i <= 1000; i++) {
-    usersWriter.write({
+    await usersWriter.write({
       id: i,
       name: faker.name.findName(),
     });
@@ -21,7 +22,7 @@ const generateUsers = () => {
   console.log('Users generated!');
 };
 
-const generateListings = () => {
+const generateListings = async () => {
   listingsWriter.pipe(fs.createWriteStream('./csv/listings.csv'));
   let reservationId = 0;
   const startDate = new Date();
@@ -36,7 +37,7 @@ const generateListings = () => {
       cleaning: i % 3 === 0 ? getRandomNum(10, 101) : 0,
       service: getRandomNum(20, 101),
     }
-    listingsWriter.write(listingInfo);
+    await listingsWriter.write(listingInfo);
     generateBookings(reservationId + 1, listingInfo.review_count, startDate, listingInfo);
     reservationId += listingInfo.review_count;
   }
@@ -44,7 +45,7 @@ const generateListings = () => {
   console.log('Listings and bookings generated!');
 };
 
- const generateBookings = (startingId, reviewCount, startDate, listingInfo) => {
+ const generateBookings = async (startingId, reviewCount, startDate, listingInfo) => {
    bookingsWriter.pipe(fs.createWriteStream('./csv/bookings.csv'));
 
    const calculateDate = (date, days) => {
@@ -64,7 +65,7 @@ const generateListings = () => {
      const stayLength = getRandomNum(1, listingInfo.max_stay + 1);
      checkin = calculateDate(startDate, getRandomNum(1, 8));
 
-     bookingsWriter.write({
+     await bookingsWriter.write({
        id: startingId + i,
        checkin,
        checkout: calculateDate(checkin, getRandomNum(1, listingInfo.max_stay + 1)),
@@ -74,16 +75,20 @@ const generateListings = () => {
        total_cost: (listingInfo.per_night * stayLength) + listingInfo.cleaning + listingInfo.service,
        listing_id: listingInfo.id,
        user_id: getRandomNum(1, 1000),
-     }, () => { bookingsWriter.end() });
+     }, () => { 
+       bookingsWriter.end();
+       bookingsWriter.on('finish', () => {
+         debug('done');
+       })
+     });
      checkin = calculateDate(checkin, stayLength);
    }
-   
  };
 
 async function dataGenerator() {
+  debug('start');
   await generateUsers();
   await generateListings();
-  await generateBookings();
 }
 
 dataGenerator();
