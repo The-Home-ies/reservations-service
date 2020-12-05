@@ -8,7 +8,7 @@ require('events').EventEmitter.defaultMaxListeners = 1000000;
 const getRandomNum = (min, max) => Math.floor((Math.random() * (max - min) ) + min);
 
 const users = argv.users;
-const writeUsers = fs.createWriteStream('./csv/users.csv');
+const writeUsers = fs.createWriteStream('./csv/cassandraUsers.csv');
 writeUsers.write('id,name\n', 'utf8');
 
 function writeTenMillionUsers(writer, encoding, callback) {
@@ -35,7 +35,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
 }
 
 const listings = argv.listings;
-const writeListings = fs.createWriteStream('./csv/listings.csv');
+const writeListings = fs.createWriteStream('./csv/cassandraListings.csv');
 writeListings.write('id,name,max_guests,max_stay,review_count,per_night,cleaning,service\n', 'utf8');
 
 function writeOneMillionListings(writer, encoding, callback) {
@@ -74,8 +74,8 @@ function writeOneMillionListings(writer, encoding, callback) {
   }
 }
 
-const writeBookings = fs.createWriteStream('./csv/bookings.csv');
-writeBookings.write('id,checkin,checkout,adults,children.infants.total_cost,listing_id,user_id\n', 'utf8');
+const writeBookings = fs.createWriteStream('./csv/cassandraBookings.csv');
+writeBookings.write('listing_id,id,user_id,name,checkin,checkout,adults,children.infants.total_cost\n', 'utf8');
 
  const generateBookings = (startingId, reviewCount, startDate, listingInfo) => {
 
@@ -96,15 +96,16 @@ writeBookings.write('id,checkin,checkout,adults,children.infants.total_cost,list
      const stayLength = getRandomNum(1, listingInfo.max_stay + 1);
      checkin = calculateDate(startDate, getRandomNum(1, 8));
      const bookingInfo = {
+       listing_id: listingInfo.id,
        id: startingId + i,
+       user_id: getRandomNum(1, 1000000),
+       name: listingInfo.name,
        checkin,
        checkout: calculateDate(checkin, getRandomNum(1, listingInfo.max_stay + 1)),
        adults,
        children,
        infants,
        total_cost: (listingInfo.per_night * stayLength) + listingInfo.cleaning + listingInfo.service,
-       listing_id: listingInfo.id,
-       user_id: getRandomNum(1, 1000000),
      };
      const data = `${bookingInfo.id},${bookingInfo.checkin},${bookingInfo.checkout},${bookingInfo.adults},${bookingInfo.children},${bookingInfo.infants},${bookingInfo.total_cost},${bookingInfo.listing_id},${bookingInfo.user_id}\n`;
      writeBookings.write(data, 'utf8');

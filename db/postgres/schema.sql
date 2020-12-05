@@ -19,6 +19,7 @@ CREATE TABLE reservations.listings (
 
 CREATE TABLE reservations.bookings (
   id SERIAL PRIMARY KEY,
+  name VARCHAR(70),
   checkin DATE NOT NULL,
   checkout DATE NOT NULL,
   adults INT,

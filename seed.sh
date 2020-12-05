@@ -20,10 +20,12 @@ SCHEMA="$DIR/db/postgres/schema.sql"
 psql -U $USER < $SCHEMA
 
 ### Run Our Generator Script ###
-node csvGenerator.js --users=$USERS --listings=$LISTINGS
-USERSFP="$DIR/csv/users.csv"
-LISTINGSFP="$DIR/csv/listings.csv"
-BOOKINGSFP="$DIR/csv/bookings.csv"
-### Import Our posts.csv file to seed Database ###
-cat $DIR/csv/*.csv | psql -U $USER -c 'COPY from stdin CSV HEADER'
-# psql -U $USER -d -c "COPY users FROM '$USERSFP' CSV HEADER"
+node postgresGenerator.js --users=$USERS --listings=$LISTINGS
+
+USERSFP="$DIR/csv/postgresUsers.csv"
+LISTINGSFP="$DIR/csv/postgresListings.csv"
+BOOKINGSFP="$DIR/csv/postgresBookings.csv"
+
+### Import .csv file to seed Database ###
+# cat $DIR/csv/*.csv | psql -U $USER -c 'COPY from stdin CSV HEADER'
+psql -U $USER -d -c "COPY postgresUsers FROM '$USERSFP' CSV HEADER"
