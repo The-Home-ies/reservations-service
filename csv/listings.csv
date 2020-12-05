@@ -1,0 +1,1001 @@
+id,name,max_guests,max_stay,review_count,per_night,cleaning,service
+1,Isabel Bosco DVM,12,22,92,138,0,91
+2,Mr. Karla Block,2,31,164,311,0,93
+3,Jody Hintz,15,5,44,128,54,44
+4,Hilda Nader,3,26,349,254,0,97
+5,Isabel Corwin,7,24,450,250,0,43
+6,Fred Schowalter,2,3,158,501,32,93
+7,Dr. Susie Upton,2,2,484,297,0,90
+8,Garrett Homenick,8,8,46,798,0,30
+9,Kristie Bogan,3,25,45,793,97,70
+10,Frances Gusikowski,14,16,137,586,0,36
+11,Lamar Huels,1,17,468,285,0,99
+12,Julie Jacobi,8,8,118,553,82,34
+13,Rufus Jakubowski,3,23,340,783,0,48
+14,Hubert Armstrong,9,4,366,637,0,91
+15,Bridget Swift,10,27,243,149,76,72
+16,Mr. Erma Howe,6,3,164,194,0,90
+17,Gilberto Hagenes,11,7,190,595,0,91
+18,Beth Gutkowski,7,23,86,441,62,96
+19,Vicki Dooley,15,31,155,112,0,63
+20,Mr. Regina King,6,7,376,728,0,51
+21,Theresa Powlowski,2,3,97,662,21,27
+22,Mae Paucek DDS,1,11,131,672,0,71
+23,Darin Hettinger,9,8,18,431,0,63
+24,Jenna Cummings,15,9,338,682,31,96
+25,Miss Emma Mante,8,10,492,656,0,59
+26,Martin Kulas,15,7,312,58,0,68
+27,Tim Swift,7,4,374,462,74,92
+28,Herman Bernier,4,25,405,228,0,95
+29,Marian Miller,13,8,169,432,0,43
+30,Carlton White,14,21,50,759,75,40
+31,Angie McLaughlin,15,21,65,467,0,75
+32,Jacqueline Collier,9,12,243,680,0,48
+33,Shane Raynor,14,27,350,192,87,76
+34,Ethel Reichel,5,14,116,552,0,44
+35,Alice Streich,7,6,334,669,0,52
+36,Cassandra Wolf,16,13,77,235,13,31
+37,Miss Morris Blick,12,15,492,59,0,64
+38,Lynne Ritchie,12,14,379,528,0,85
+39,Marianne Kozey,4,3,308,573,40,86
+40,Anthony Grant,5,17,228,715,0,96
+41,Henry Feeney,16,6,134,111,0,61
+42,Ruby Kreiger,15,6,407,709,98,27
+43,Milton Lind,4,20,26,640,0,25
+44,Brent Gaylord,5,2,258,541,0,27
+45,Jeff West,1,16,255,643,70,98
+46,Joseph Streich,15,5,409,163,0,33
+47,Mr. Rosemarie Renner,6,20,485,119,0,92
+48,Heather Schmidt Jr.,7,8,422,61,65,62
+49,Cecelia Bergstrom,4,15,214,161,0,98
+50,Tom Abernathy,10,7,206,469,0,79
+51,Victor Stamm,2,23,84,510,26,67
+52,Ivan Altenwerth MD,4,18,63,228,0,28
+53,Jimmy Schulist,16,3,204,610,0,26
+54,Beatrice Strosin II,2,21,288,221,43,33
+55,Shaun Cremin,16,15,364,91,0,46
+56,Jill Funk,9,31,437,792,0,67
+57,Alex Hilll,5,7,431,239,85,25
+58,Nicolas Sawayn,10,17,475,759,0,49
+59,Jerry Gaylord,9,9,62,711,0,29
+60,Johnny Langworth MD,3,10,135,571,65,50
+61,Angelina Schamberger,15,9,339,61,0,64
+62,Miss Karen Waters,4,24,321,259,0,61
+63,Emily Pagac,6,29,482,715,33,57
+64,Brad Lindgren II,3,26,344,334,0,75
+65,Kimberly Mayert,1,25,462,527,0,45
+66,Marlon Shields,12,13,22,567,92,94
+67,Genevieve Langworth,15,30,448,623,0,51
+68,Sherman Friesen,14,4,237,673,0,35
+69,Timothy Jenkins,15,18,160,654,16,26
+70,Ms. Doyle Mayer,6,7,447,542,0,54
+71,Eunice O'Reilly,9,27,29,698,0,94
+72,Jeremy Rogahn,9,17,479,248,36,32
+73,Rose Fisher,4,16,64,74,0,89
+74,Mr. Vickie Schroeder,6,6,36,687,0,85
+75,Leslie Abshire,14,10,144,65,14,67
+76,Della Quigley,14,25,359,68,0,20
+77,Grady Dickens,13,15,465,766,0,34
+78,Cecelia Rohan,15,2,450,590,59,22
+79,Luz Schimmel,5,23,92,258,0,87
+80,Vernon Harvey,8,15,133,370,0,90
+81,Joyce Blanda,12,11,455,497,90,25
+82,Kristopher Trantow,10,17,188,50,0,90
+83,Mercedes Bailey DDS,10,4,186,719,0,58
+84,Steve Keeling,16,13,259,518,11,42
+85,Justin Emard,15,23,336,537,0,75
+86,Eric Lehner,8,16,181,388,0,89
+87,Mark Runolfsson,7,4,156,153,20,89
+88,Leroy Kilback,14,6,185,661,0,99
+89,Claire Kirlin,10,9,282,121,0,70
+90,Betty Nitzsche,16,20,84,353,63,22
+91,Horace Langosh,5,20,345,104,0,86
+92,Jose Klein,1,28,74,592,0,62
+93,Erin Kihn,15,16,411,557,51,44
+94,Alberto Hessel,14,27,214,200,0,39
+95,Mrs. Herman Braun,6,3,122,597,0,87
+96,Brandon Konopelski,16,23,407,126,58,79
+97,Elena Ward,9,7,234,72,0,38
+98,Ms. Tommy Schmidt,11,21,389,418,0,59
+99,Taylor Stracke,7,12,206,553,54,54
+100,Boyd Schinner DVM,6,25,383,335,0,64
+101,Brett Gleason,8,30,309,181,0,37
+102,Alexandra Connelly,16,4,256,299,44,48
+103,Veronica Willms,13,7,40,203,0,78
+104,Chester O'Connell,4,31,222,461,0,38
+105,Mr. Derrick Hills,9,8,177,725,30,53
+106,Leroy Schoen,1,13,438,769,0,80
+107,Jason Cremin IV,8,27,406,289,0,79
+108,Mr. Kristi Gorczany,11,28,420,164,80,55
+109,Jeremiah Larkin,10,20,444,404,0,35
+110,Jacqueline Schumm,10,6,262,126,0,70
+111,Pat Tromp,6,5,435,129,86,42
+112,Katherine Kuhic,9,3,126,85,0,70
+113,Marlon Daugherty,6,22,89,715,0,54
+114,Cameron Halvorson,9,14,122,605,29,32
+115,Corey Crona,14,23,147,409,0,60
+116,Ms. Keith O'Connell,6,7,490,81,0,55
+117,Miss Angela Moore,2,6,382,202,67,96
+118,David Spinka,16,21,362,530,0,50
+119,Priscilla West V,12,18,173,749,0,89
+120,Roosevelt Gusikowski,7,8,207,583,37,98
+121,Preston Berge,10,23,323,560,0,48
+122,Norman Rolfson,2,12,27,305,0,70
+123,Verna Nolan,11,6,443,470,26,33
+124,Judith Hettinger,14,24,221,373,0,91
+125,Pat Hills,7,15,18,352,0,22
+126,Joanne Bogisich,9,30,332,720,91,93
+127,Kevin Hickle,5,22,281,696,0,77
+128,Megan Langosh,16,30,68,595,0,22
+129,Jeanne Bednar,11,18,408,338,55,67
+130,Spencer Wilkinson,6,16,101,171,0,37
+131,Sylvia Wehner,4,28,292,337,0,92
+132,Joseph Stanton,15,10,454,54,78,64
+133,Ismael Armstrong,15,29,154,258,0,47
+134,Jonathan Hartmann DDS,1,10,296,485,0,86
+135,Gregg Bode,3,15,172,197,60,96
+136,Toby Nader,5,25,462,239,0,96
+137,Brendan Lakin,13,19,306,50,0,60
+138,Jacquelyn Volkman,6,8,135,790,97,91
+139,Cynthia Morissette,3,4,372,260,0,81
+140,Dora Walsh,9,6,10,506,0,66
+141,Patti Hodkiewicz Sr.,11,8,399,750,74,87
+142,Ms. Opal Jacobi,11,27,45,696,0,39
+143,Minnie Casper,3,21,42,754,0,52
+144,Maxine Hudson,5,19,148,210,37,98
+145,Kellie Tillman,16,7,485,298,0,49
+146,Cristina Walsh MD,1,31,78,602,0,75
+147,Philip Kiehn,16,12,280,754,91,42
+148,Brendan Nader,9,21,364,732,0,77
+149,Mrs. Ryan Klein,15,30,50,448,0,74
+150,Francisco Schroeder,16,27,61,670,79,81
+151,Dorothy Thompson,11,4,47,358,0,70
+152,Julie Simonis,13,15,11,142,0,77
+153,Edwin Dare,10,12,457,208,99,21
+154,Angel Lehner,6,13,47,468,0,90
+155,Rick Wolf,3,25,122,132,0,27
+156,Sergio Kertzmann,13,8,390,307,66,65
+157,Israel Rosenbaum,14,18,292,740,0,89
+158,Santos Macejkovic,4,24,466,478,0,67
+159,Kirk Runolfsson,6,4,238,341,42,27
+160,Fred Schmidt,6,31,163,689,0,62
+161,Martin Johnston,12,16,61,517,0,20
+162,Nancy Treutel,12,27,260,327,11,88
+163,Ms. Kristina Kshlerin,7,22,123,469,0,37
+164,Bernice Runte,6,10,177,791,0,45
+165,Sarah D'Amore,3,13,457,372,92,36
+166,Cindy Becker,3,25,44,442,0,29
+167,Wendy Hoppe,12,29,95,529,0,78
+168,Candice Kirlin,15,30,75,457,16,92
+169,Bernard Pagac,11,15,242,762,0,43
+170,Gail Hermiston,5,8,227,491,0,70
+171,Peggy Steuber,4,11,260,617,25,41
+172,Randy Legros,9,10,217,503,0,43
+173,Cecil Hamill,5,23,394,283,0,90
+174,Alexandra Walter,13,16,155,223,82,21
+175,Charlie Moore,2,2,23,256,0,98
+176,Tonya Hansen,1,17,347,79,0,28
+177,Lula Blick,5,6,207,471,81,44
+178,Santos Kunze,3,27,155,425,0,64
+179,Mr. Laura Bartoletti,1,24,316,796,0,54
+180,Steven Cormier,7,15,108,529,69,57
+181,Dominic Moore,11,12,191,468,0,73
+182,Blanche Dibbert,12,8,277,143,0,83
+183,Desiree Heaney,11,21,463,800,62,27
+184,Kristen Swift,8,10,76,771,0,32
+185,Kim Schultz,8,18,462,676,0,98
+186,Mamie O'Kon Sr.,9,11,28,50,61,92
+187,Jacqueline Kohler,10,23,482,614,0,43
+188,Sandra Lowe II,7,15,106,342,0,58
+189,Charlene Harvey,12,31,322,646,46,90
+190,Charles Crist,9,12,84,525,0,87
+191,Brad McKenzie,3,15,156,675,0,45
+192,Dr. Dwayne Bins,6,11,19,472,36,98
+193,Russell Doyle,10,13,347,53,0,47
+194,Wayne Bauch,3,20,318,796,0,99
+195,Sophia Ferry,6,8,430,386,19,76
+196,Kara Pfeffer,14,14,220,246,0,78
+197,Charlotte Gleason I,1,24,182,436,0,86
+198,Alexander Waelchi,13,29,75,462,99,38
+199,Abel Hagenes,10,6,63,218,0,69
+200,Harvey Shanahan,5,29,159,792,0,35
+201,Domingo Gulgowski IV,10,30,460,709,45,71
+202,Colin Bashirian,16,25,118,107,0,44
+203,Bobbie Nader Sr.,4,22,415,649,0,25
+204,Minnie Huel,2,27,89,685,19,45
+205,Karl Schroeder,8,14,401,203,0,92
+206,Elena Bogisich I,16,6,393,73,0,87
+207,Marvin Waters,2,13,296,631,74,31
+208,Audrey Kohler,2,16,94,540,0,55
+209,Samuel Baumbach,3,22,96,408,0,20
+210,Alonzo Rippin,5,6,86,96,39,93
+211,Ms. Susan Kunde,6,17,489,644,0,23
+212,Kimberly Rippin,14,29,130,569,0,73
+213,Rodolfo Weimann,6,24,403,795,27,38
+214,Ms. Jessie Raynor,8,12,385,110,0,71
+215,Mr. Felix Hyatt,1,15,212,502,0,91
+216,Brittany Pacocha,10,27,328,228,52,55
+217,Dewey Aufderhar,2,11,424,423,0,97
+218,Mary Balistreri,10,11,62,549,0,83
+219,Myrtle Connelly,3,16,262,283,51,57
+220,Ramon Franecki,12,6,89,253,0,68
+221,Donnie Kuhlman,7,31,231,551,0,35
+222,Lyle Mills II,5,22,433,585,64,33
+223,Hope Jaskolski,3,31,140,669,0,96
+224,Rufus Rice,14,24,487,433,0,95
+225,Leonard Waters,7,29,295,724,53,29
+226,Jennie Glover,7,29,448,478,0,97
+227,Jody Sauer,2,23,26,119,0,24
+228,Leticia Beatty,6,7,154,268,93,29
+229,Ms. Joseph Legros,6,29,50,569,0,82
+230,Israel Labadie,6,10,54,75,0,25
+231,Josefina Dach,9,2,67,150,35,62
+232,Toni Powlowski,4,8,80,690,0,91
+233,Mrs. Albert Murray,3,13,76,479,0,32
+234,Stacey Greenfelder,9,26,51,220,54,65
+235,Ivan Towne,13,17,150,723,0,81
+236,Ronald Daugherty,9,12,93,67,0,39
+237,Gregg Blick,14,30,257,717,71,33
+238,Christopher Jacobs I,1,29,363,189,0,49
+239,Adam Torphy,16,4,196,416,0,23
+240,Miss Alejandro Streich,11,12,248,574,95,66
+241,Mr. Lana Thompson,1,4,364,486,0,98
+242,Casey Wilderman,9,24,480,88,0,72
+243,Nicole Durgan,1,30,92,217,51,51
+244,Bryan Bins,9,29,19,260,0,79
+245,Don Padberg I,9,29,319,105,0,56
+246,Shaun Rogahn,2,21,370,658,35,89
+247,Samantha Ward,5,18,382,685,0,62
+248,Mattie Legros,7,22,414,209,0,30
+249,Ms. Leona Conroy,1,21,497,65,62,63
+250,Ricardo Rippin PhD,13,15,236,501,0,35
+251,Mrs. Gabriel Lubowitz,1,20,391,210,0,56
+252,Donald Wintheiser PhD,15,30,443,195,61,89
+253,Kristopher Fadel,15,28,248,672,0,38
+254,Claude Jacobson III,3,17,388,171,0,60
+255,Deanna Pfannerstill,4,18,50,139,27,45
+256,Connie Hilll,13,18,368,594,0,29
+257,Jake Hoeger,8,13,337,94,0,40
+258,Linda O'Connell DVM,3,7,434,371,54,33
+259,Frank Tillman,16,29,301,735,0,34
+260,Edwin Rohan,8,16,97,243,0,65
+261,Craig Upton,8,25,453,186,24,42
+262,Jacob Herzog,3,10,400,697,0,40
+263,Violet Batz,14,18,380,200,0,75
+264,Ruben Gottlieb IV,16,8,461,371,36,54
+265,Archie Schmidt,12,6,361,542,0,96
+266,Darnell Gerhold,6,29,472,126,0,86
+267,Lula Wyman,2,14,477,686,46,97
+268,Aubrey Braun,16,28,215,730,0,26
+269,Stacy Durgan,4,16,129,789,0,62
+270,Kari Hintz,5,9,395,613,42,45
+271,Max Zemlak,4,13,339,191,0,93
+272,Wade Wintheiser,3,9,372,201,0,41
+273,Spencer Kshlerin,14,8,421,235,37,72
+274,Dallas Torphy,10,4,145,455,0,43
+275,Ramon Kozey,10,12,324,500,0,70
+276,Julia Reilly,9,12,319,457,39,59
+277,Marie Barton IV,5,25,93,746,0,53
+278,Tara Runte,5,30,197,547,0,30
+279,Joey Goodwin,9,17,60,218,33,80
+280,Guy Collier,12,14,426,398,0,100
+281,Cecilia Kirlin,3,15,236,589,0,77
+282,Marc Bernier,7,3,413,110,19,84
+283,Edgar Heaney,7,19,16,424,0,43
+284,Grant Donnelly,6,21,29,297,0,56
+285,Abraham Williamson,5,10,271,711,59,39
+286,Gerard Connelly IV,6,25,387,558,0,74
+287,Howard Koss,14,15,427,109,0,31
+288,Jerald Quigley,1,4,223,88,65,44
+289,Gertrude Marvin,16,25,73,71,0,25
+290,Gene Williamson,2,3,472,735,0,26
+291,Ms. Lisa Gaylord,12,14,378,411,16,55
+292,Terrance Hessel,8,23,179,607,0,33
+293,Josh Kerluke,7,13,468,85,0,83
+294,Kristie Herman,3,6,411,182,80,34
+295,Chad Toy PhD,9,5,32,352,0,54
+296,Keith Stanton III,9,23,474,655,0,38
+297,Sonja Wilderman,7,10,27,510,74,98
+298,Jonathon Graham,13,21,134,193,0,87
+299,Jan Kohler PhD,5,28,331,269,0,37
+300,Bryant Hettinger,16,28,274,278,57,42
+301,Kenny Green,5,30,132,282,0,99
+302,Felix Baumbach,2,12,378,773,0,68
+303,Meredith Powlowski,3,16,166,283,86,56
+304,Ora Zboncak,11,2,200,694,0,66
+305,Stephanie Farrell,16,8,79,201,0,68
+306,Angelina Zulauf,11,2,90,124,21,37
+307,Nicholas Waelchi,5,25,77,390,0,61
+308,Tony Considine III,10,25,399,434,0,81
+309,Tommy Anderson,7,5,137,318,91,57
+310,Mattie Marquardt,16,3,62,171,0,97
+311,Hope Rath,7,23,177,641,0,38
+312,Anne Glover,4,27,97,540,84,90
+313,Gertrude Watsica DVM,5,18,52,589,0,73
+314,Henrietta Veum,2,15,65,498,0,27
+315,Billie O'Conner,7,13,70,574,50,74
+316,Lois Rippin MD,10,30,446,87,0,34
+317,Clinton Marvin,13,21,218,658,0,95
+318,Jeanne Nader V,10,26,374,386,49,40
+319,Gwendolyn Conn,11,24,115,68,0,52
+320,Charlotte Becker,8,4,490,635,0,34
+321,Dr. Harold Smitham,1,16,301,140,22,70
+322,Lola Hand,4,17,491,332,0,22
+323,Marjorie Nienow,11,14,336,227,0,74
+324,Mrs. Rufus Vandervort,5,23,285,421,79,57
+325,Marcia Schoen,8,8,19,271,0,36
+326,Dr. Joan Shields,4,2,59,513,0,88
+327,Ellis Kuhn,4,5,423,127,94,25
+328,Melissa Sanford Sr.,13,11,232,276,0,83
+329,Dr. Dianne McLaughlin,14,10,332,200,0,76
+330,Amanda Stehr,1,17,302,333,33,87
+331,Miss Monique Wolf,6,17,274,281,0,48
+332,Clifford Zulauf,16,5,369,720,0,88
+333,Mrs. Phyllis Hartmann,7,23,289,618,38,87
+334,Alice Jacobson,7,14,40,530,0,81
+335,Mrs. Tony Strosin,2,3,215,83,0,50
+336,Randall Tremblay DDS,4,7,138,66,17,43
+337,Kenneth Jerde,3,8,357,219,0,34
+338,Ryan Rohan I,15,12,479,752,0,80
+339,Cory Kertzmann,1,7,107,733,91,74
+340,Cecil Hand III,12,28,261,468,0,54
+341,Lloyd Reilly,3,14,132,141,0,88
+342,Mona Kautzer,13,25,310,389,57,75
+343,Merle Considine,11,21,75,753,0,29
+344,Charlotte Oberbrunner,2,12,407,238,0,43
+345,Catherine Wehner,13,31,206,177,100,40
+346,Terrence Emmerich,6,3,40,431,0,94
+347,Joyce Pacocha,9,13,476,261,0,70
+348,Deanna Gottlieb,15,6,377,375,32,57
+349,Marcos Shields,2,11,365,412,0,79
+350,Miss Christopher Marks,12,12,24,531,0,60
+351,Jessica Hamill,3,27,123,334,54,42
+352,Salvatore McKenzie,13,10,446,652,0,75
+353,Francis Fahey,3,9,126,451,0,49
+354,Brenda Mitchell,15,4,349,214,92,56
+355,Shirley White,10,27,352,695,0,47
+356,George Krajcik DVM,2,3,57,77,0,21
+357,Boyd Boyle,2,19,82,127,62,96
+358,Aubrey Zulauf,5,18,12,311,0,74
+359,Heidi Runte,9,8,152,792,0,92
+360,Dana Altenwerth,8,14,265,616,72,56
+361,Miss Trevor Carter,15,2,281,452,0,70
+362,Jodi Kuhic,4,13,183,57,0,41
+363,Tracy Kerluke,8,11,164,792,67,90
+364,Felicia Bergnaum,1,15,82,607,0,84
+365,Derrick Wisozk,11,16,30,378,0,46
+366,Ismael Thompson DDS,14,20,276,64,25,49
+367,Glenn Hackett I,8,29,437,470,0,51
+368,Erica Hoeger,7,13,103,668,0,45
+369,Fred Torp,8,4,248,62,92,67
+370,Kurt Weber DVM,14,30,45,707,0,36
+371,Marvin Stanton V,2,15,86,655,0,30
+372,Sonja Raynor,1,5,106,83,64,88
+373,Fernando Trantow,3,26,413,740,0,44
+374,Margaret Cremin,10,17,13,772,0,84
+375,Travis Goldner,7,31,106,511,25,52
+376,Miss Emilio Auer,8,11,249,425,0,86
+377,Holly Johns,4,21,269,192,0,85
+378,Lila Rutherford,11,19,302,189,64,58
+379,Shane Fahey,7,13,486,600,0,70
+380,Lester Bins,4,21,415,216,0,49
+381,Julius Goodwin,7,6,345,614,39,91
+382,Irene Herman PhD,2,26,147,308,0,38
+383,Annette Senger,11,16,164,726,0,58
+384,Kirk Grady,11,28,481,78,53,75
+385,Spencer Bergstrom,11,25,450,112,0,84
+386,Cecil Schneider,6,3,51,174,0,97
+387,Eric Beer V,10,23,495,350,88,78
+388,Pete Hegmann,6,31,348,64,0,52
+389,Hugo Kulas,5,28,321,696,0,55
+390,Sabrina Conn,9,17,241,455,96,46
+391,Lydia Bruen,6,5,449,607,0,76
+392,Orville Morissette,2,22,140,786,0,47
+393,Christopher Hoeger,16,9,427,322,84,71
+394,Javier Kunze PhD,4,3,458,779,0,93
+395,Wesley Johns,15,26,283,614,0,39
+396,Bernadette Champlin,10,29,155,241,69,85
+397,Tracy Marquardt,16,14,230,423,0,69
+398,Ben Zieme,1,14,483,303,0,25
+399,Rosalie Marvin,9,2,317,118,46,39
+400,Geoffrey Carroll,11,10,381,235,0,81
+401,Patrick Carter,9,26,364,754,0,29
+402,Gerald Schiller,16,29,25,86,91,56
+403,Phil Willms,2,23,12,557,0,85
+404,Hazel Zboncak Jr.,4,12,334,158,0,52
+405,Bonnie Kovacek,15,25,378,462,85,71
+406,Anna Kassulke PhD,11,31,427,793,0,92
+407,Omar Nolan,9,26,294,66,0,33
+408,Marguerite Rutherford,6,26,74,338,88,89
+409,Erin Lowe,11,12,150,147,0,35
+410,Margarita Stracke,7,17,85,734,0,51
+411,Eunice Jenkins,16,17,441,653,23,98
+412,Eddie Johnston,3,26,457,199,0,90
+413,Reginald Torp,9,21,300,123,0,71
+414,Forrest Rolfson,16,4,212,336,41,72
+415,Nora Koch,2,13,423,68,0,87
+416,Belinda Ryan PhD,8,17,142,266,0,59
+417,Ryan Jones,15,15,186,697,17,36
+418,Sharon Rutherford PhD,10,10,140,481,0,90
+419,Micheal Schmeler,3,16,204,93,0,27
+420,Jared Schaefer,2,14,64,210,11,61
+421,Estelle Schaden,15,17,148,459,0,42
+422,Nancy Kilback,12,12,317,388,0,87
+423,Alvin Emard,13,16,56,153,73,44
+424,Timothy Pagac,8,14,189,648,0,52
+425,Jeffery Marks,16,29,49,541,0,50
+426,Jorge Smith,3,19,249,437,47,88
+427,Samuel Gislason,9,15,83,285,0,92
+428,Shari Grant,12,12,89,453,0,42
+429,Vincent Erdman,10,26,336,157,90,49
+430,Candace Stanton,2,25,70,387,0,72
+431,Lindsay Kuhlman,13,14,329,369,0,33
+432,Marjorie Hauck,2,19,413,642,46,59
+433,Abraham Turcotte,16,9,269,615,0,70
+434,Ira O'Connell,5,27,240,550,0,53
+435,Nettie Stamm,16,21,346,555,77,94
+436,Jeff Hoppe,12,12,469,548,0,52
+437,Darryl Bogisich I,14,23,364,112,0,80
+438,Joe Spinka,4,25,83,273,14,95
+439,Jasmine Crist,6,10,488,92,0,61
+440,Tommie Schumm,3,6,498,187,0,97
+441,Laurie Adams,15,12,120,87,53,92
+442,Max Murray,3,5,242,799,0,27
+443,Tomas Daniel,5,29,146,591,0,89
+444,Raymond Botsford,6,24,424,496,72,64
+445,Martin Reichert,1,18,493,603,0,33
+446,Irma Watsica,5,12,369,231,0,89
+447,Kelley Dooley,13,3,490,516,76,81
+448,Nellie Runolfsson,14,4,228,238,0,40
+449,Ruth Friesen,14,28,46,523,0,27
+450,Irving Wintheiser,1,18,77,772,32,29
+451,Irvin Schaden,11,10,85,767,0,87
+452,Louis Marvin,14,27,392,396,0,45
+453,Santiago Hackett III,9,21,346,482,98,25
+454,Johnny Heller Sr.,6,20,411,554,0,91
+455,Miss Brendan Langosh,8,28,292,81,0,33
+456,Natalie Johnston,14,17,485,357,31,97
+457,George Jacobs III,16,15,129,653,0,100
+458,Mildred Windler,3,31,471,472,0,20
+459,Wade Sporer,9,6,142,452,10,21
+460,Leticia MacGyver,11,29,299,337,0,86
+461,Margaret Frami,4,13,399,730,0,90
+462,Ronnie Conn,3,2,473,791,70,39
+463,Scott Daniel,4,6,466,620,0,94
+464,Gretchen Ritchie,7,4,489,505,0,76
+465,Nina Bode,1,9,46,253,11,70
+466,Ramiro Pouros PhD,11,22,280,655,0,51
+467,Alton Dietrich MD,4,4,108,557,0,95
+468,Alexander Mayert,9,26,469,393,21,52
+469,Elias Streich,1,20,255,111,0,80
+470,Juanita Lemke,4,12,382,370,0,79
+471,Norma Glover,11,20,157,452,56,42
+472,Kerry Berge,13,4,55,558,0,70
+473,Ms. Amelia Blick,11,8,269,726,0,62
+474,Dr. Gustavo Nitzsche,2,21,65,221,59,86
+475,Tara McGlynn,5,29,145,262,0,52
+476,Mrs. Madeline Predovic,14,20,329,118,0,43
+477,Mr. Janice Cassin,10,23,258,488,15,62
+478,Dean Gutkowski,13,26,83,232,0,58
+479,Robin Boyle,5,3,118,233,0,96
+480,Heather Harris,11,25,265,244,47,96
+481,Phil Herman,5,17,226,411,0,27
+482,Ms. Jenna Rath,7,31,110,669,0,28
+483,Daryl Hackett,11,30,398,299,84,86
+484,Sonia Monahan,15,27,464,665,0,92
+485,Joseph Jast,10,25,95,300,0,93
+486,John Rosenbaum,7,29,338,374,28,20
+487,Juanita Balistreri III,5,10,487,272,0,89
+488,Tara Medhurst,2,14,244,778,0,68
+489,Dana Steuber,7,29,485,286,43,49
+490,Darrin Tremblay,3,15,441,698,0,31
+491,Irene Reinger Sr.,6,14,181,175,0,63
+492,Marlene Kohler,1,31,152,233,84,64
+493,Mabel Runolfsson,4,28,240,237,0,27
+494,Franklin Russel V,11,19,303,123,0,43
+495,Claude Mosciski,3,16,66,610,67,49
+496,Opal Heller,2,28,205,716,0,23
+497,Amy Moen,2,25,144,81,0,51
+498,Merle Jacobson,7,20,127,614,48,67
+499,Jessica Lang,14,3,88,793,0,70
+500,Essie Bechtelar,2,26,453,674,0,96
+501,Jodi Corwin MD,6,27,240,431,39,30
+502,Sharon Aufderhar,3,24,208,86,0,26
+503,Roland Torp Sr.,14,5,135,182,0,21
+504,Terry Ebert MD,7,23,398,248,89,20
+505,Cora Greenfelder,7,16,193,339,0,46
+506,Mamie Reilly,2,22,160,659,0,97
+507,Wade Graham,13,3,97,652,70,29
+508,Henry Steuber MD,4,9,282,336,0,60
+509,Angel Medhurst,1,4,436,381,0,20
+510,Agnes Krajcik,2,22,285,227,77,63
+511,Vanessa Shields III,14,8,242,465,0,95
+512,Mr. Josephine Roberts,4,28,372,462,0,66
+513,Brandi Huel,3,27,170,516,60,40
+514,Jorge Hintz,8,24,36,402,0,37
+515,Scott Cartwright,13,28,378,283,0,66
+516,Doreen Bernhard,12,13,318,183,32,20
+517,Marion Price III,13,29,65,131,0,47
+518,Renee Davis,11,6,383,695,0,43
+519,Levi Erdman,4,26,245,256,30,40
+520,Carla Smith MD,10,30,113,757,0,46
+521,Amy Langworth,5,27,32,53,0,47
+522,Mrs. Philip Hauck,5,8,115,440,39,91
+523,Olive Swaniawski,11,22,413,210,0,60
+524,Rebecca Veum,11,13,403,526,0,91
+525,Victor Goodwin,12,30,130,509,26,43
+526,Kenny Haag,3,15,436,226,0,37
+527,Mrs. Floyd Hartmann,2,22,355,800,0,100
+528,Luke Rau,16,30,106,307,74,74
+529,Kent Schneider,15,14,369,467,0,48
+530,Mary Cartwright,16,22,473,389,0,84
+531,Blake O'Kon IV,2,22,323,619,18,57
+532,Rogelio Wiza,13,27,89,672,0,96
+533,Mrs. Shane Cartwright,10,19,402,349,0,51
+534,Wesley Klein,10,19,32,310,78,71
+535,Mr. Ricky Hirthe,2,31,77,130,0,94
+536,Joe Heller,13,25,474,94,0,89
+537,Hugh Ankunding V,1,20,92,472,40,26
+538,Cody Howe,2,18,481,137,0,47
+539,Kelly Kris,9,24,444,621,0,47
+540,Jonathan Feil,14,21,171,635,49,20
+541,Ismael Breitenberg,14,6,439,477,0,70
+542,Neil Ledner,7,26,217,491,0,77
+543,Theresa Hickle,5,2,341,64,62,62
+544,Raquel Roberts,11,25,22,337,0,32
+545,Wilfred Rodriguez,15,28,485,135,0,76
+546,Miss Heidi Pacocha,16,9,363,766,59,98
+547,Jan Lueilwitz,9,17,160,467,0,48
+548,Evelyn Waters I,10,3,128,213,0,92
+549,Diana O'Conner,1,8,238,542,30,81
+550,Freda Hahn,13,4,377,419,0,66
+551,Celia Brown,3,16,307,332,0,96
+552,Vicky Robel,15,30,333,116,39,27
+553,Danny Cruickshank,16,8,360,143,0,45
+554,Jody Friesen,14,21,10,471,0,71
+555,Tim Schuppe,14,18,266,123,89,38
+556,Laurie Mertz III,8,27,125,89,0,39
+557,Curtis Runolfsdottir III,1,25,110,629,0,57
+558,Betty Hintz,8,12,371,747,44,91
+559,Sonya Wyman,1,23,53,526,0,52
+560,Candace Jacobs,8,27,42,64,0,82
+561,Irving Hodkiewicz,1,13,124,437,40,30
+562,Dr. Mable Harber,16,14,140,583,0,43
+563,Jan Ryan,15,7,102,434,0,57
+564,Nicole VonRueden,15,12,378,412,57,56
+565,Eugene Schaden,4,30,153,373,0,94
+566,Rachael Hane,13,10,198,655,0,63
+567,Ms. Vickie Flatley,10,19,306,329,12,87
+568,Charlotte Johnston,16,31,287,731,0,50
+569,Joy Leuschke MD,8,31,448,654,0,49
+570,Victoria Torphy III,2,10,99,208,64,99
+571,Paulette Kreiger,12,5,227,662,0,72
+572,Mr. Zachary Klein,11,11,474,166,0,33
+573,Floyd Bashirian,13,16,136,252,64,38
+574,Jackie Bergnaum V,12,7,51,536,0,40
+575,Emilio Welch,7,13,42,675,0,60
+576,Janice McCullough,14,9,291,95,84,50
+577,Jo Frami,4,24,403,302,0,93
+578,Jeff Donnelly,16,9,452,393,0,66
+579,Cory Luettgen,11,5,210,493,40,63
+580,Jennie O'Keefe,2,27,472,724,0,77
+581,Floyd Rice DVM,5,27,177,240,0,77
+582,Jackie Hackett,8,15,491,154,44,58
+583,Julio Leffler MD,7,10,488,663,0,70
+584,Ashley Kihn IV,9,23,217,299,0,44
+585,Alfred Abernathy,6,23,183,520,67,74
+586,Leona Dooley Jr.,15,12,413,140,0,71
+587,Kelley Pfeffer DDS,10,29,204,628,0,56
+588,Manuel Anderson,14,5,375,214,55,55
+589,Allen Christiansen,10,27,272,772,0,85
+590,Mrs. Maggie Quitzon,6,4,114,574,0,56
+591,Miss Alvin Sanford,3,12,157,205,14,37
+592,Carrie Lebsack,1,28,142,267,0,57
+593,Austin Grady,11,10,446,606,0,33
+594,Mandy Rippin MD,15,11,363,167,13,95
+595,Gilbert Anderson,11,3,251,603,0,94
+596,Lowell Green,12,25,208,327,0,37
+597,Kelly Dare,7,6,270,325,24,20
+598,Mike Hettinger Sr.,1,19,313,350,0,65
+599,Rufus Price,3,9,462,417,0,43
+600,Jerald Marquardt Sr.,9,8,90,253,100,68
+601,Anita Torp MD,2,30,54,56,0,58
+602,Bessie Cremin,5,8,280,363,0,20
+603,Arlene Zemlak,14,22,212,126,39,40
+604,Janet Ebert,2,5,494,237,0,38
+605,Marjorie Herman,7,8,285,643,0,40
+606,Mrs. Dixie Gulgowski,11,9,196,122,51,76
+607,Jean Rippin,15,7,69,707,0,32
+608,April Purdy,4,21,214,610,0,53
+609,Lola Bins,9,18,417,385,41,44
+610,Bert Gorczany II,4,24,108,63,0,81
+611,Doug Schultz,6,6,102,288,0,58
+612,Alyssa Grant,8,8,140,259,98,41
+613,Ida Reinger,10,25,240,713,0,73
+614,Jeffrey Runolfsdottir,7,13,120,689,0,90
+615,Jeannie Bartell,3,13,334,135,79,26
+616,Gilbert Kirlin,4,29,161,92,0,45
+617,Jeremy Metz MD,6,11,128,317,0,27
+618,Leonard Tillman,8,21,342,787,89,42
+619,Silvia Mohr,13,8,361,702,0,32
+620,Lewis Friesen,11,6,417,295,0,47
+621,Lorena Koss,16,11,66,112,61,22
+622,Misty Hayes,9,3,378,585,0,37
+623,Bill Howe,5,31,199,634,0,30
+624,Jonathon Stark,12,4,301,194,59,22
+625,Roland Rolfson PhD,6,13,302,507,0,95
+626,Armando Cruickshank,2,18,33,792,0,25
+627,Grant Stracke,15,3,231,67,76,93
+628,Linda Lueilwitz,5,8,388,469,0,54
+629,Verna Mayert,12,4,33,395,0,48
+630,Irma O'Reilly,16,18,32,794,89,51
+631,Debra Zemlak Sr.,7,6,252,358,0,68
+632,Agnes Pacocha,6,3,214,296,0,94
+633,Neil Jakubowski,12,21,309,236,84,32
+634,Tyrone Doyle,11,14,319,207,0,70
+635,Alyssa Goldner,11,22,346,793,0,72
+636,Miss Clarence Weissnat,3,12,147,558,61,42
+637,Dominic Hills,4,6,365,562,0,84
+638,Cary Labadie,13,15,276,503,0,28
+639,Guy Nikolaus PhD,5,12,166,205,17,81
+640,Mrs. Alton Wilkinson,15,18,14,760,0,24
+641,Dixie Cole,14,30,263,719,0,34
+642,Lindsey McCullough,1,27,465,411,40,59
+643,Don Smitham,1,21,168,410,0,93
+644,Elvira Mosciski III,3,4,254,564,0,80
+645,Alberto Leannon,16,8,419,347,42,61
+646,Miss Andre Orn,9,14,278,560,0,83
+647,Lynn Witting PhD,10,21,67,584,0,46
+648,May Glover Jr.,16,20,326,202,31,76
+649,Nicole Towne,15,31,458,355,0,33
+650,Keith Huel,8,13,77,667,0,52
+651,Hilda Veum,16,13,129,545,56,99
+652,Dr. June Quitzon,16,12,20,223,0,100
+653,Mr. Guadalupe Grady,13,2,320,484,0,69
+654,Rogelio Franecki,15,2,373,189,20,53
+655,Aubrey Heaney,15,8,367,354,0,77
+656,Olivia Dibbert III,7,13,66,240,0,54
+657,Esther Rutherford,12,22,316,395,71,31
+658,Cynthia Mills,1,14,484,780,0,74
+659,Miss Violet Ebert,4,29,10,786,0,85
+660,Miss Leonard Blick,5,22,41,208,25,25
+661,Angel Romaguera,4,13,325,78,0,82
+662,Ms. Juanita Schinner,14,26,456,716,0,62
+663,Mae Barrows,15,25,432,581,41,38
+664,Ollie Lockman,7,13,420,169,0,82
+665,Misty Stanton,9,16,462,719,0,100
+666,Max Windler,6,18,392,597,36,65
+667,Denise Casper MD,10,15,489,196,0,72
+668,Clyde Schumm,2,23,453,84,0,94
+669,Becky Tillman,14,8,436,783,64,64
+670,Lester Steuber,3,20,60,731,0,96
+671,Winifred Murazik II,13,21,492,494,0,23
+672,Courtney Barrows,12,24,222,302,28,62
+673,Anne Dooley,4,2,397,392,0,22
+674,Melody Kihn,15,7,150,423,0,92
+675,Arlene Cummings DDS,13,29,468,737,96,86
+676,Alfredo Miller II,5,20,89,53,0,82
+677,Dr. Hugh Kerluke,1,27,407,652,0,89
+678,Clayton Legros,5,25,168,612,65,88
+679,Ginger Purdy,12,9,377,425,0,96
+680,Ms. Cecilia Hilpert,3,12,278,71,0,71
+681,Ms. Eduardo Lesch,12,29,359,768,84,62
+682,Max Bernhard,14,20,295,452,0,29
+683,Aubrey Aufderhar,3,4,369,418,0,84
+684,Steven Huels,14,26,161,90,72,38
+685,Timmy DuBuque,6,28,11,735,0,89
+686,Karl Abbott III,7,26,190,160,0,20
+687,Chester Raynor,11,25,286,498,20,82
+688,Kirk Wolff,5,7,313,497,0,73
+689,Eloise Hodkiewicz,3,23,310,706,0,47
+690,Javier Douglas,15,19,441,722,61,27
+691,Lois Blick,14,29,110,275,0,21
+692,Gretchen Kerluke,6,3,280,362,0,43
+693,Carol Ruecker I,6,14,480,742,31,37
+694,Dr. Bradley Hand,16,31,45,597,0,55
+695,Lynn Marquardt,1,2,42,432,0,50
+696,Allison Vandervort,9,7,398,394,39,96
+697,Mr. Lillie Breitenberg,6,27,254,481,0,76
+698,Mattie Murray I,3,15,190,99,0,79
+699,Mrs. Joseph Hoppe,11,12,313,257,21,74
+700,Jeremy Emard,4,16,187,571,0,27
+701,Willard Satterfield,7,10,287,763,0,94
+702,Matthew Little,14,9,41,271,11,49
+703,Sonja Zulauf,15,19,414,736,0,82
+704,Miss Mario Deckow,3,31,444,794,0,44
+705,Victor Brekke,16,21,129,68,10,70
+706,Clayton Schaden,4,10,327,511,0,78
+707,Laurence Lockman,1,2,84,230,0,100
+708,Julie Dicki MD,4,26,320,323,73,84
+709,Johanna Johns PhD,16,19,363,564,0,25
+710,Mabel Strosin,8,8,12,115,0,26
+711,Vicki Kulas,1,24,360,800,26,68
+712,Carl Mills,14,5,173,439,0,77
+713,Yolanda D'Amore,6,23,148,110,0,93
+714,Tonya White,12,18,221,284,77,23
+715,Cedric Kunde,15,2,425,226,0,76
+716,Jesus Romaguera,12,6,299,611,0,62
+717,Patti Lakin,6,17,252,764,50,82
+718,Ron Abshire,12,7,82,188,0,92
+719,Charlotte Dare,4,25,368,685,0,87
+720,Molly Cassin I,11,23,418,428,63,58
+721,Mr. Rose Willms,12,17,183,197,0,27
+722,Miss Ellen Harvey,10,19,74,266,0,84
+723,Dr. Juanita Reynolds,2,14,230,242,18,29
+724,Jasmine Wiegand DVM,9,6,405,648,0,93
+725,Carla Schowalter,12,3,281,418,0,71
+726,Rosemary Fritsch,8,27,153,561,70,38
+727,Becky Langosh,1,18,241,605,0,46
+728,Miss Kerry Pfeffer,1,3,414,66,0,35
+729,Wilbert Denesik,11,20,474,543,35,89
+730,Nora Leannon,2,17,100,324,0,63
+731,Jackie Bednar,3,12,308,453,0,46
+732,Melody Kiehn,9,4,409,357,76,27
+733,Mrs. Lowell Walter,8,29,140,602,0,79
+734,Miranda Murphy MD,4,21,412,524,0,48
+735,Dustin Collins,8,28,357,600,49,56
+736,Kellie McLaughlin,6,23,155,642,0,69
+737,Melba Larson,8,20,375,113,0,34
+738,Percy Bosco,9,13,174,682,78,82
+739,Latoya Hackett MD,8,9,114,193,0,29
+740,Margie Boehm,13,11,266,407,0,67
+741,Dexter Mante DDS,6,28,56,540,93,30
+742,Jim Turner,13,4,353,338,0,67
+743,Warren Rippin,7,28,254,756,0,86
+744,Leon Stokes,10,22,481,504,50,71
+745,Clyde Wolff,3,13,230,111,0,53
+746,Doyle Weimann,12,26,128,266,0,31
+747,Harvey Kling,12,3,278,514,41,96
+748,Miss Emily Rau,15,8,248,328,0,55
+749,Mrs. Bonnie Hand,16,10,42,543,0,38
+750,Renee Fritsch,7,14,414,360,22,36
+751,Colin Torphy,4,17,288,93,0,47
+752,Erma Bosco,6,2,473,661,0,51
+753,Willard Kunze,10,23,385,229,17,60
+754,Preston Gusikowski,5,7,482,738,0,88
+755,Irma Simonis DVM,3,9,243,224,0,100
+756,Mrs. Jill Glover,1,23,371,195,82,30
+757,Sophia Stracke,14,28,478,151,0,52
+758,Ivan Will,3,3,394,628,0,75
+759,Dr. Colin Altenwerth,12,9,210,629,97,36
+760,Patty Hills,16,24,220,432,0,96
+761,Kyle Turcotte,14,5,186,87,0,83
+762,Jacob Kuvalis,7,20,420,278,16,50
+763,Joel Corwin,11,11,182,436,0,80
+764,Geoffrey Mills,8,29,89,219,0,44
+765,Mr. Alonzo Mertz,8,28,304,575,80,86
+766,Johanna Ziemann,13,17,394,793,0,36
+767,Mercedes Moen,16,5,97,670,0,20
+768,Melody Streich,3,29,169,384,83,97
+769,Rita Ledner,15,25,335,103,0,71
+770,Erma Schuppe,16,25,330,661,0,43
+771,Geraldine Funk,5,12,78,759,79,35
+772,Katherine Tromp,4,2,32,480,0,86
+773,Rufus Dickinson,10,6,470,422,0,57
+774,Anna Kuphal,9,10,411,99,19,24
+775,Sonya Dare,10,28,101,406,0,91
+776,Miss Rosie McLaughlin,10,7,271,299,0,21
+777,Mona Gibson Sr.,5,26,204,402,29,52
+778,Gary Carter,12,19,54,457,0,41
+779,Marilyn Bogan,1,11,243,371,0,42
+780,Glenda Beer,12,23,102,480,43,27
+781,Marion King,10,14,317,532,0,59
+782,Wilbert Glover MD,15,20,409,622,0,37
+783,George Dietrich,1,24,470,84,21,59
+784,Tracy O'Reilly,15,3,159,641,0,90
+785,Ken Olson,11,13,100,312,0,53
+786,Paulette Marks,7,12,357,182,15,44
+787,Wayne Quitzon,8,28,253,384,0,25
+788,Tabitha Hermann,7,5,401,204,0,91
+789,Omar Hills,14,23,467,304,19,24
+790,Dr. Wilma Jast,15,27,428,286,0,34
+791,Samantha McCullough,14,13,490,719,0,60
+792,Melody Marks,11,18,216,725,82,27
+793,Elizabeth Stoltenberg,15,15,121,473,0,34
+794,Terence Ortiz,8,14,22,732,0,58
+795,Betsy Hills,13,25,428,83,64,58
+796,Jody Franecki Jr.,15,12,396,765,0,28
+797,Terrell Schimmel,11,30,322,201,0,62
+798,Mr. Sheri Emmerich,16,4,128,311,14,74
+799,Wayne Rodriguez,14,23,99,799,0,81
+800,Thelma Lind,8,15,139,568,0,74
+801,Laurie McKenzie,12,14,167,686,94,27
+802,Jermaine Kozey,11,22,202,759,0,71
+803,Hector Hartmann V,2,5,325,734,0,55
+804,Lynette Ratke IV,13,19,207,295,22,90
+805,Gregg Green,1,7,145,646,0,21
+806,Ms. Vanessa Hagenes,6,21,136,393,0,37
+807,Alma Okuneva,6,27,190,303,28,90
+808,Faith Douglas,8,31,46,639,0,36
+809,Johnnie Stokes DDS,13,24,316,485,0,47
+810,Josefina Huel,4,8,217,362,31,95
+811,Rodney Hoeger,15,30,413,496,0,75
+812,Mrs. Jasmine Keebler,13,20,154,757,0,76
+813,Tiffany Fadel,8,5,447,261,31,27
+814,Mrs. Lawrence Connelly,4,13,404,355,0,57
+815,Enrique Jones,10,19,419,743,0,38
+816,Sophie Steuber,8,31,159,595,87,84
+817,Edwin Douglas,15,19,342,215,0,66
+818,Brooke Waelchi,13,11,301,522,0,94
+819,Lula Beer Sr.,14,23,365,633,74,92
+820,Jeff Johns,5,4,374,60,0,86
+821,Cynthia Schuster,12,23,192,351,0,42
+822,Sylvia Gleichner,7,12,466,329,91,64
+823,Sonja Kunze Jr.,6,11,372,212,0,33
+824,Jonathon Jacobs,4,9,349,153,0,96
+825,Mr. Moses Beier,7,29,397,173,49,82
+826,Harvey O'Conner,7,17,158,576,0,41
+827,Alexis Von,16,19,310,310,0,52
+828,Jay Goyette,4,6,89,348,72,73
+829,Clark Prohaska,2,17,158,611,0,20
+830,Sally Conn,9,16,179,345,0,72
+831,Micheal Schmeler,4,19,191,695,30,36
+832,Christine Herzog,3,7,303,352,0,96
+833,Don McCullough,12,4,172,500,0,52
+834,Gina Green,6,23,101,157,92,52
+835,Scott Fritsch,11,29,173,392,0,25
+836,Luis Flatley,5,24,209,442,0,24
+837,Josh Gulgowski,10,5,170,567,59,66
+838,Brett Rowe,2,23,456,439,0,29
+839,Lorene Jones,8,26,213,658,0,46
+840,Manuel Gibson V,15,27,383,310,53,39
+841,Dr. Winston Stark,3,24,24,159,0,83
+842,Julius Veum MD,13,17,26,748,0,73
+843,Abel Hilpert,6,26,435,385,42,68
+844,Bernice Jones,8,24,60,798,0,61
+845,Ebony Klein,9,24,103,446,0,99
+846,Hannah Schuppe,5,19,21,73,78,31
+847,Rodolfo Glover,12,4,191,517,0,91
+848,Sabrina Graham,4,14,87,619,0,96
+849,Jody Volkman,8,6,402,739,35,44
+850,Reginald Johns,5,8,278,98,0,69
+851,Angel Haley,9,31,202,333,0,35
+852,Carole Corwin,11,12,144,348,49,40
+853,Michele Turcotte,7,7,268,672,0,65
+854,Janis Stroman MD,10,12,169,539,0,72
+855,Dianne Gusikowski,14,31,109,686,23,64
+856,Hubert Cronin,7,20,141,638,0,57
+857,Whitney Willms,4,24,24,591,0,70
+858,Brooke Schumm DVM,13,23,190,423,46,51
+859,Stacey Robel,8,11,330,680,0,53
+860,Lola VonRueden,7,16,324,772,0,27
+861,Janice Hand,15,27,159,483,90,37
+862,Cecilia Gleason,15,29,121,617,0,85
+863,Morris Wunsch,1,11,62,109,0,90
+864,Wilma Mraz,8,21,164,755,89,98
+865,Audrey Abbott,15,12,437,112,0,98
+866,Jan Quigley,13,9,359,636,0,67
+867,Clint Purdy,3,28,81,208,64,62
+868,Ernest Flatley,13,12,175,789,0,58
+869,Jake Kozey,1,17,266,671,0,27
+870,Gene Bartell,9,14,148,477,22,63
+871,Clyde Breitenberg,12,11,197,270,0,41
+872,Dominic Block,15,6,256,205,0,76
+873,Annie Conn,15,26,422,688,42,94
+874,Jamie Mitchell,13,23,228,689,0,20
+875,Phil Tremblay,11,8,75,694,0,88
+876,Janie Johnston Sr.,7,24,325,459,43,59
+877,Courtney Wilkinson,10,31,227,140,0,82
+878,Nichole Bartell,16,18,11,780,0,90
+879,Ricky Harris,12,5,471,371,47,61
+880,Mandy Bahringer,12,2,216,498,0,21
+881,Salvatore Wisozk,10,20,473,575,0,72
+882,Colleen King MD,8,9,85,278,48,64
+883,Madeline Hamill,14,4,257,426,0,75
+884,Lee Turcotte,6,28,459,664,0,32
+885,Lucas Kohler PhD,2,8,37,171,43,59
+886,Carolyn Adams,4,9,377,605,0,30
+887,Nora Erdman,5,19,153,195,0,58
+888,Miss Angie Tillman,10,2,230,799,84,82
+889,Teresa Smitham,13,3,318,666,0,45
+890,Lula Wuckert,6,17,278,132,0,71
+891,Miss Karl Friesen,12,13,157,496,56,85
+892,Elizabeth Simonis,10,26,305,142,0,75
+893,Ruby Medhurst,12,7,415,358,0,54
+894,Cathy Zulauf,7,28,366,148,43,85
+895,Mrs. Tyrone Adams,13,10,131,161,0,52
+896,Dana Lueilwitz,5,8,218,547,0,69
+897,Kathleen Hane,2,27,474,417,78,76
+898,Ramon Blanda,11,15,454,362,0,27
+899,Miss Esther Moen,7,22,274,102,0,61
+900,Linda Boyle,4,4,276,435,82,26
+901,Nicholas Kshlerin,5,9,405,447,0,25
+902,Velma Reinger,11,4,308,717,0,30
+903,Caroline Beatty,1,3,193,175,17,69
+904,Mrs. Johnnie Koelpin,12,21,346,66,0,70
+905,Clifford Auer,16,20,13,541,0,40
+906,Peggy Dooley,10,10,277,616,21,56
+907,Tina Considine,11,4,366,309,0,69
+908,Theodore Yost,1,13,117,345,0,57
+909,Roman Dare,13,21,133,91,35,98
+910,Pearl Stracke,13,5,132,388,0,97
+911,Antonio Parisian,1,23,314,623,0,34
+912,Wesley Hintz,2,16,469,275,77,35
+913,Mercedes Tromp,16,15,361,644,0,95
+914,Patsy Senger,6,8,350,322,0,99
+915,Hubert Mertz,15,24,295,135,98,85
+916,Ms. Miguel Mraz,4,16,390,136,0,85
+917,Ryan Friesen,4,26,400,52,0,30
+918,Aubrey Bechtelar,13,17,111,738,82,89
+919,Rufus Ebert,15,5,460,147,0,72
+920,Dr. Katherine Haley,14,14,412,263,0,28
+921,Dana O'Conner,12,28,485,433,85,65
+922,Estelle Rice,6,28,200,313,0,38
+923,Ms. Leo Carroll,15,27,211,705,0,88
+924,Al Kessler,5,12,108,283,39,47
+925,Rachel Jast,1,30,321,55,0,34
+926,Felicia Kirlin,1,26,121,174,0,79
+927,Arlene Hodkiewicz,1,30,238,711,39,92
+928,Geneva Connelly,15,5,260,575,0,31
+929,Thelma Koss,7,25,274,148,0,34
+930,Miss Jerald Pacocha,10,23,366,761,60,49
+931,Vicky Beatty,15,20,374,676,0,68
+932,Sammy Willms,9,9,163,709,0,30
+933,Kent Hauck,16,24,497,202,58,84
+934,Irma Herzog,14,30,13,379,0,84
+935,Lindsey Kautzer III,2,14,411,601,0,97
+936,Wm Schaden,11,18,193,754,45,26
+937,Jasmine Lueilwitz,5,3,255,420,0,93
+938,Natasha Murphy,12,21,228,631,0,91
+939,Rafael Nicolas,5,6,360,588,99,23
+940,Jay Prosacco,14,30,200,316,0,80
+941,Gilberto Marvin V,3,18,256,80,0,37
+942,Christine Hessel,15,3,147,284,70,91
+943,Marlon Stoltenberg,8,2,139,766,0,67
+944,Manuel Kunze,14,11,294,621,0,61
+945,Adrian Bechtelar I,2,26,265,526,94,99
+946,Elaine Rolfson V,14,14,123,613,0,100
+947,Mrs. Barry Murphy,14,17,275,714,0,38
+948,Dr. Joyce Robel,12,5,451,788,97,81
+949,Jaime Friesen,1,24,479,95,0,49
+950,Patsy Yost,13,9,333,636,0,25
+951,Veronica Grant,10,24,404,475,63,86
+952,Krista Cummings,15,27,420,667,0,33
+953,Toni Price,16,6,163,355,0,68
+954,Georgia Weissnat,15,14,69,156,28,33
+955,Luke Harber,10,30,174,790,0,87
+956,Brittany Williamson,10,5,93,525,0,57
+957,Jack Corkery,3,4,242,412,37,91
+958,Billie Brakus,6,16,284,638,0,74
+959,Jessie Denesik,7,29,250,753,0,94
+960,Marshall Treutel,6,12,164,779,74,26
+961,Rosalie Stokes,12,7,254,150,0,79
+962,Darryl Runolfsdottir,7,3,374,371,0,50
+963,Shawna Quigley,1,20,339,131,58,36
+964,Andrew VonRueden,10,16,161,441,0,58
+965,Jill Flatley,5,6,379,799,0,77
+966,Kate Friesen,6,20,364,574,64,57
+967,Myra Mann,6,2,208,489,0,70
+968,Lucas Hagenes,6,18,64,307,0,63
+969,Marvin Frami,8,2,148,124,87,66
+970,Elaine Bogan,16,14,265,564,0,80
+971,Cora Erdman,12,2,260,746,0,94
+972,Ms. Betsy Kuhn,6,18,232,392,48,96
+973,Maxine Senger,13,23,261,272,0,35
+974,Gwen Wilderman,8,12,294,714,0,27
+975,Sean Hauck V,11,28,219,329,61,62
+976,Tanya Lemke,16,19,273,596,0,80
+977,Henrietta Haley Sr.,15,7,314,706,0,88
+978,Patti Huel,3,28,88,613,22,77
+979,Omar Hilpert,14,4,66,419,0,66
+980,Amos Morar,12,4,86,434,0,90
+981,Toby Littel,3,31,489,466,60,36
+982,Van Luettgen,7,25,466,645,0,33
+983,Cesar Herman,4,4,85,673,0,26
+984,Marcus Becker,15,16,113,361,85,20
+985,Bessie Kihn,2,12,340,720,0,100
+986,Shelia Hartmann,4,15,149,535,0,78
+987,Jeanette Bogisich Jr.,11,8,171,491,11,20
+988,Dean Cassin,4,9,217,441,0,96
+989,Ms. Lamar Hessel,15,12,463,203,0,60
+990,Isabel Miller,4,16,335,748,54,66
+991,Charlie Lubowitz,15,16,121,746,0,91
+992,Preston Stoltenberg,16,10,384,467,0,65
+993,Rufus Walsh,7,2,292,265,26,44
+994,Mattie Reynolds,4,24,198,575,0,88
+995,Josephine Bednar,15,4,444,623,0,79
+996,Leland Medhurst,16,15,418,324,17,79
+997,Sara Stanton,16,12,104,768,0,74
+998,Alvin Lehner,12,7,494,92,0,95
+999,Moses Swift,5,23,295,667,79,50
+1000,Howard Jones,2,16,182,133,0,97

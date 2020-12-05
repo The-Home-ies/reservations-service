@@ -11,6 +11,7 @@ CREATE TABLE reservations.listings (
   name VARCHAR(70),
   max_guests INT NOT NULL,
   max_stay INT NOT NULL,
+  review_count INT,
   per_night INT NOT NULL,
   cleaning INT NOT NULL,
   service INT NOT NULL

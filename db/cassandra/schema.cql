@@ -18,13 +18,14 @@ CREATE TABLE bookings.listings (
   name text,
   max_guests int,
   max_stay int,
+  review_count int,
   fees frozen<fees>,
   PRIMARY KEY (listing_id))
 WITH comment = 'Q1. Find information about a listing';
 
 CREATE TABLE bookings.reservations_by_listing (
   listing_id int,
-  reservation_id int,
+  reservation_id uuid,
   user_id int,
   name text,
   checkin date,
