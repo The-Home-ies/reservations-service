@@ -96,8 +96,8 @@ writeBookings.write('listing_id,id,user_id,name,checkin,checkout,adults,children
      const stayLength = getRandomNum(1, listingInfo.max_stay + 1);
      checkin = calculateDate(startDate, getRandomNum(1, 8));
      const bookingInfo = {
-       listing_id: listingInfo.id,
        id: startingId + i,
+       listing_id: listingInfo.id,
        user_id: getRandomNum(1, 1000000),
        name: faker.name.findName(),
        checkin,
