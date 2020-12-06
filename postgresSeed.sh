@@ -29,6 +29,6 @@ LISTINGSFP="$DIR/csv/postgres/listings.csv"
 BOOKINGSFP="$DIR/csv/postgres/bookings.csv"
 
 ### Import .csv files to seed Database ###
-psql -U $USER -d $DATABASE -c "\copy users(id,name) FROM '$USERSFP' CSV HEADER"
-psql -U $USER -d $DATABASE -c "\copy listings(id,name,max_guests,max_stay,review_count,per_night,cleaning,service) FROM '$LISTINGSFP' CSV HEADER"
-psql -U $USER -d $DATABASE -c "\copy bookings(id,name,checkin,checkout,adults,children,infants,total_cost,listing_id,user_id) FROM '$BOOKINGSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\timing" -c "\copy users(id,name) FROM '$USERSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\timing" -c "\copy listings(id,name,max_guests,max_stay,review_count,per_night,cleaning,service) FROM '$LISTINGSFP' CSV HEADER"
+psql -U $USER -d $DATABASE -c "\timing" -c "\copy bookings(id,name,checkin,checkout,adults,children,infants,total_cost,listing_id,user_id) FROM '$BOOKINGSFP' CSV HEADER"

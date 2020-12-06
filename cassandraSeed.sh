@@ -17,15 +17,15 @@ USERS=${1:-10000000}
 LISTINGS=${2:-1000000}
 
 ### Import Our Schema ###
-SCHEMA="$DIR/db/postgres/schema.sql"
+SCHEMA="$DIR/db/cassandra/schema.cql"
 psql -U $USER < $SCHEMA
 
 ### Run Generator Script ###
-node postgresGenerator.js --users=$USERS --listings=$LISTINGS
+node cassandraGenerator.js --users=$USERS --listings=$LISTINGS
 
-USERSFP="$DIR/csv/postgres/users.csv"
-LISTINGSFP="$DIR/csv/postgres/listings.csv"
-BOOKINGSFP="$DIR/csv/postgres/bookings.csv"
+USERSFP="$DIR/csv/cassandra/users.csv"
+LISTINGSFP="$DIR/csv/cassandra/listings.csv"
+BOOKINGSFP="$DIR/csv/cassandra/bookings.csv"
 
 ### Import .csv files to seed Database ###
 psql -U $USER -c "\copy reservations.users(id,name) FROM '$USERSFP' CSV HEADER"

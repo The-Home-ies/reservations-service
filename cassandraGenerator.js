@@ -54,7 +54,7 @@ function writeOneMillionListings(writer, encoding, callback) {
         name: faker.name.findName(),
         max_guests: getRandomNum(1, 17),
         max_stay: getRandomNum(2, 32),
-        review_count: getRandomNum(10, 100),
+        review_count: getRandomNum(50, 150),
         per_night: getRandomNum(50, 801),
         cleaning: i % 3 === 0 ? getRandomNum(10, 101) : 0,
         service: getRandomNum(20, 101),
@@ -107,7 +107,7 @@ writeBookings.write('listing_id,id,user_id,name,checkin,checkout,adults,children
        infants,
        total_cost: (listingInfo.per_night * stayLength) + listingInfo.cleaning + listingInfo.service,
      };
-     const data = `${bookingInfo.id},${bookingInfo.name},${bookingInfo.checkin},${bookingInfo.checkout},${bookingInfo.adults},${bookingInfo.children},${bookingInfo.infants},${bookingInfo.total_cost},${bookingInfo.listing_id},${bookingInfo.user_id}\n`;
+     const data = `${bookingInfo.listing_id},${bookingInfo.id},${bookingInfo.user_id},${bookingInfo.name},${bookingInfo.checkin},${bookingInfo.checkout},${bookingInfo.adults},${bookingInfo.children},${bookingInfo.infants},${bookingInfo.total_cost}\n`;
      writeBookings.write(data, 'utf8');
      checkin = calculateDate(checkin, stayLength);
    }
@@ -116,7 +116,7 @@ writeBookings.write('listing_id,id,user_id,name,checkin,checkout,adults,children
 function generateData() {
   debug('start');
   writeTenMillionUsers(writeUsers, 'utf8', () => { writeUsers.end(); });
-  writeOneMillionListings(writeListings, 'utf8', () => { writeListings.end(); debug('done'); });
+  writeOneMillionListings(writeListings, 'utf8', () => { writeListings.end(); debug('done generating csv files'); });
 };
 
 generateData();

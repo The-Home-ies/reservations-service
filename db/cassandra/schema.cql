@@ -28,8 +28,8 @@ CREATE TABLE bookings.reservations_by_listing (
   reservation_id uuid,
   user_id int,
   name text,
-  checkin date,
-  checkout date,
+  checkin text,
+  checkout text,
   guests frozen<guests>,
   total_cost decimal,
   PRIMARY KEY (listing_id))
