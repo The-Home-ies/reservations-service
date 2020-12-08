@@ -1,31 +1,39 @@
-CREATE KEYSPACE IF NOT EXISTS bookings 
+CREATE KEYSPACE IF NOT EXISTS bookingsudt 
 WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
-CREATE TABLE bookings.users (
+CREATE TYPE bookingsudt.fees (
+  per_night int,
+  cleaning int,
+  service int 
+);
+
+CREATE TYPE bookingsudt.guests (
+  adults int,
+  children int,
+  infants int 
+);
+
+CREATE TABLE bookingsudt.users (
   user_id int,
   name text,
   PRIMARY KEY (user_id))
 WITH comment = 'Find user by id';
 
-CREATE TABLE bookings.listings (
+CREATE TABLE bookingsudt.listings (
   listing_id int,
-  cleaning int,
+  fees frozen<fees>,
   max_guests int,
   max_stay int,
   name text,
-  per_night int,
   review_count int,
-  service int, 
   PRIMARY KEY (listing_id))
 WITH comment = 'Find information about a listing';
 
-CREATE TABLE bookings.reservations (
+CREATE TABLE bookingsudt.reservations (
   reservation_id int,
-  adults int,
   checkin text,
   checkout text,
-  children int,
-  infants int, 
+  guests frozen<guests>,
   listing_id int,
   name text,
   total_cost decimal,
@@ -33,17 +41,14 @@ CREATE TABLE bookings.reservations (
   PRIMARY KEY (reservation_id))
 WITH comment = 'Find reservation by id';
 
-CREATE TABLE bookings.reservations_by_listing (
+CREATE TABLE bookingsudt.reservations_by_listing (
   listing_id int,
   reservation_id int,
-  adults int,
   checkin text,
   checkout text,
-  children int,
-  infants int,
+  guests frozen<guests>,
   name text,
   total_cost decimal,
   user_id int,
   PRIMARY KEY (listing_id, reservation_id))
-WITH comment = 'Find all bookings / specific booking by listing id';
-
+WITH comment = 'Find all bookingsudt / specific booking by listing id';
