@@ -122,25 +122,6 @@ const reservationsByListings = (bookingInfo) => {
   writeReservationsByListings.write(data, 'utf8');
 };
 
-// function reviewsByListing(numberOfReviews) {
-//   if (numberOfReviews === 0) return reviewsStream.end();
-//   const listing_id = numberOfReviews % 1000000;
-//   const review_id = numberOfReviews;
-//   const user_first_name = faker.name.firstName();
-//   const review_body = faker.lorem.sentences();
-//   const created_at = `${faker.date.between('2015-01-01', '2020-12-05')}`;
-//   const cleanliness = generateRandomNum(1, 5);
-//   const communication = generateRandomNum(1, 5);
-//   const check_in = generateRandomNum(1, 5);
-//   const accuracy = generateRandomNum(1, 5);
-//   const location = generateRandomNum(1, 5);
-//   const value = generateRandomNum(1, 5);
-//   const review_entry = `${listing_id},${created_at},{${accuracy},${check_in},${cleanliness},${communication},${location},${value}},${review_body},${review_id},${user_first_name}\n`;
-//   const streamOkay = reviewsStream.write(review_entry);
-//   if (!streamOkay) reviewsStream.once('drain', () => reviewsByListing(numberOfReviews - 1));
-//   else reviewsByListing(numberOfReviews - 1);
-// }
-
 function generateData() {
   debug('start');
   writeTenMillionUsers(writeUsers, 'utf8', () => { writeUsers.end(); });
