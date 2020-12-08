@@ -1,5 +1,5 @@
-CREATE KEYSPACE bookings WITH replication =
-{'class': 'SimpleStrategy', 'replication_factor': 1};
+CREATE KEYSPACE IF NOT EXISTS bookings 
+WITH replication = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 CREATE TYPE bookings.fees (
   per_night int,
@@ -13,36 +13,43 @@ CREATE TYPE bookings.guests (
   infants int 
 );
 
-CREATE TABLE bookings.listings (
-  listing_id int,
-  name text,
-  max_guests int,
-  max_stay int,
-  review_count int,
-  fees frozen<fees>,
-  PRIMARY KEY (listing_id))
-WITH comment = 'Q1. Find information about a listing';
-
-CREATE TABLE bookings.reservations_by_listing (
-  listing_id int,
-  reservation_id uuid,
+CREATE TABLE bookings.users (
   user_id int,
   name text,
+  PRIMARY KEY (user_id))
+WITH comment = 'Find user by id';
+
+CREATE TABLE bookings.listings (
+  listing_id int,
+  fees frozen<fees>,
+  max_guests int,
+  max_stay int,
+  name text,
+  review_count int,
+  PRIMARY KEY (listing_id))
+WITH comment = 'Find information about a listing';
+
+CREATE TABLE bookings.reservations (
+  reservation_id int,
   checkin text,
   checkout text,
   guests frozen<guests>,
-  total_cost decimal,
-  PRIMARY KEY (listing_id))
-WITH comment = 'Q2. Find all bookings / specific booking by listing id';
-
-CREATE TABLE bookings.reservation (
-  reservation_id int,
   listing_id int,
-  user_id int,
   name text,
-  checkin date,
-  checkout date,
-  guests frozen<guests>,
   total_cost decimal,
+  user_id int,
   PRIMARY KEY (reservation_id))
-WITH comment = 'Q3. Find reservation by reservation id';
+WITH comment = 'Find reservation by id';
+
+CREATE TABLE bookings.reservations_by_listing (
+  listing_id int,
+  reservation_id int,
+  checkin text,
+  checkout text,
+  guests frozen<guests>,
+  name text,
+  total_cost decimal,
+  user_id int,
+  PRIMARY KEY (listing_id, reservation_id))
+WITH comment = 'Find all bookings / specific booking by listing id';
+
