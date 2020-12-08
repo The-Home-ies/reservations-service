@@ -8,7 +8,7 @@ require('events').EventEmitter.defaultMaxListeners = 1000000;
 const getRandomNum = (min, max) => Math.floor((Math.random() * (max - min) ) + min);
 
 const users = argv.users;
-const writeUsers = fs.createWriteStream('./csv/postgres/users.csv');
+const writeUsers = fs.createWriteStream('../../csv/postgres/users.csv');
 writeUsers.write('id,name\n', 'utf8');
 
 function writeTenMillionUsers(writer, encoding, callback) {
@@ -35,7 +35,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
 }
 
 const listings = argv.listings;
-const writeListings = fs.createWriteStream('./csv/postgres/listings.csv');
+const writeListings = fs.createWriteStream('../../csv/postgres/listings.csv');
 writeListings.write('id,name,max_guests,max_stay,review_count,per_night,cleaning,service\n', 'utf8');
 let reservationId = 1;
 
@@ -74,7 +74,7 @@ function writeOneMillionListings(writer, encoding, callback) {
   }
 }
 
-const writeBookings = fs.createWriteStream('./csv/postgres/bookings.csv');
+const writeBookings = fs.createWriteStream('../../csv/postgres/bookings.csv');
 writeBookings.write('id,name,checkin,checkout,adults,children,infants,total_cost,listing_id,user_id\n', 'utf8');
 
  const generateBookings = (startingId, reviewCount, startDate, listingInfo) => {

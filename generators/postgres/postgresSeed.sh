@@ -18,15 +18,15 @@ USERS=${1:-10000000}
 LISTINGS=${2:-1000000}
 
 ### Import Our Schema ###
-SCHEMA="$DIR/db/postgres/schema.sql"
+SCHEMA="$DIR/../../db/postgres/schema.sql"
 psql -U $USER < $SCHEMA
 
 ### Run Generator Script ###
 node postgresGenerator.js --users=$USERS --listings=$LISTINGS
 
-USERSFP="$DIR/csv/postgres/users.csv"
-LISTINGSFP="$DIR/csv/postgres/listings.csv"
-BOOKINGSFP="$DIR/csv/postgres/bookings.csv"
+USERSFP="$DIR/../../csv/postgres/users.csv"
+LISTINGSFP="$DIR/../../csv/postgres/listings.csv"
+BOOKINGSFP="$DIR/../../csv/postgres/bookings.csv"
 
 ### Import .csv files to seed Database ###
 psql -U $USER -d $DATABASE -c "\timing" -c "\copy users(id,name) FROM '$USERSFP' CSV HEADER"
