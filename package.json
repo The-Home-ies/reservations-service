@@ -8,7 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "server": "node ./server/server.js",
+    "server": "nodemon ./server/server.js",
     "seed": "node ./db/seed",
     "build": "webpack --watch --config webpack.config.js",
     "testBackend": "jest --config ./tests/backend/jestBackend.config.js",
@@ -29,6 +29,7 @@
     "jest-css-modules-transform": "^4.0.2",
     "mongoose": "^5.10.14",
     "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
     "path": "^0.12.7",
     "pg": "^8.5.1",
     "prop-types": "^15.7.2",

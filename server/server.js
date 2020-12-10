@@ -18,11 +18,8 @@ app.use('/', express.json());
 app.use('/listings/:id', express.static(path.join(__dirname, '..', 'client', 'dist')));
 
 app.get('/bookings/:id', db.getBookingsByListingId);
-app.post('/bookings', db.createBooking);
-
-app.get('/', (req, res) => {
-  res.json({ info: 'Node.js, Express, and Postgres API' })
-});
+app.post('/bookings/:id', db.createBooking);
+app.put('/bookings/:id', db.updateBooking);
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);

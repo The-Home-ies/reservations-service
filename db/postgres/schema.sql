@@ -30,10 +30,10 @@ CREATE TABLE bookings (
   name VARCHAR(70),
   checkin VARCHAR(70),
   checkout VARCHAR(70),
-  adults INT,
-  children INT,
-  infants INT,
-  total_cost INT,
+  adults INT NOT NULL,
+  children INT NOT NULL,
+  infants INT NOT NULL,
+  total_cost INT NOT NULL,
   listing_id INT REFERENCES listings(id) NOT NULL,
   user_id INT REFERENCES users(id)
 );
