@@ -20,6 +20,7 @@ app.use('/listings/:id', express.static(path.join(__dirname, '..', 'client', 'di
 app.get('/bookings/:id', db.getBookingsByListingId);
 app.post('/bookings/:id', db.createBooking);
 app.put('/bookings/:id', db.updateBooking);
+app.delete('/bookings/:id', db.deleteBooking);
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`);
