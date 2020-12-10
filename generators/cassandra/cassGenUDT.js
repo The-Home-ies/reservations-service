@@ -8,7 +8,7 @@ require('events').EventEmitter.defaultMaxListeners = 1000000;
 const getRandomNum = (min, max) => Math.floor((Math.random() * (max - min) ) + min);
 
 const users = argv.users;
-const writeUsers = fs.createWriteStream('./csv/cassandra/udt/users.csv');
+const writeUsers = fs.createWriteStream('../../csv/cassandra/udt/users.csv');
 writeUsers.write('id,name\n', 'utf8');
 
 function writeTenMillionUsers(writer, encoding, callback) {
@@ -35,7 +35,7 @@ function writeTenMillionUsers(writer, encoding, callback) {
 }
 
 const listings = argv.listings;
-const writeListings = fs.createWriteStream('./csv/cassandra/udt/listings.csv');
+const writeListings = fs.createWriteStream('../../csv/cassandra/udt/listings.csv');
 writeListings.write('id,fees,max_guests,max_stay,name,review_count\n', 'utf8');
 let reservationId = 1;
 
@@ -74,7 +74,7 @@ function writeOneMillionListings(writer, encoding, callback) {
   }
 }
 
-const writeReservations = fs.createWriteStream('./csv/cassandra/udt/reservations.csv');
+const writeReservations = fs.createWriteStream('../../csv/cassandra/udt/reservations.csv');
 writeReservations.write('id,checkin,checkout,guests,listing_id,name,total_cost,user_id\n', 'utf8');
 
  const generateBookings = async (startingId, reviewCount, startDate, listingInfo) => {
@@ -114,7 +114,7 @@ writeReservations.write('id,checkin,checkout,guests,listing_id,name,total_cost,u
    }
  };
 
-const writeReservationsByListings = fs.createWriteStream('./csv/cassandra/udt/reservations_by_listing.csv');
+const writeReservationsByListings = fs.createWriteStream('../../csv/cassandra/udt/reservations_by_listing.csv');
 writeReservationsByListings.write('listing_id,reservation_id,checkin,checkout,guests,name,total_cost,user_id\n', 'utf8');
 
 const reservationsByListings = (bookingInfo) => {

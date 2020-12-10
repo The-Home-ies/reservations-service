@@ -14,7 +14,4 @@ USERS=${1:-10000000}
 LISTINGS=${2:-1000000}
 
 ### Run Generator Script ###
-node cassGenerator.js --users=$USERS --listings=$LISTINGS
-
-### Run Cassandra Copy File ###
-cqlsh -f ./db/cassandra/copyCassandra.cql
+node cassGenUDT.js --users=$USERS --listings=$LISTINGS
