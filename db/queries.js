@@ -1,16 +1,11 @@
 const pool = require('../config/pool.js');
 
+
 const getBookingsByListingId = (req, res) => {
-  const listingId = parseInt(req.params.id);
-  pool.query(
-    'SELECT * FROM bookings WHERE listing_id = $1',
-    [listingId],
-    (err, results) => {
-      if (err) {
-        throw err;
-      }
-      res.status(200).json(results.rows);
-    });
+  const listingId = req.params.id;
+  pool.query(`SELECT * FROM bookings WHERE listing_id = '${listingId}'`)
+    .then(results => res.status(200).json(results.rows))
+    .catch(err => console.error(err));
 };
 
 const createBooking = (req, res) => {
