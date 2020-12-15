@@ -11,6 +11,8 @@ pids
 logs
 *.log
 
+generators
+
 /csv
 *.csv
 
