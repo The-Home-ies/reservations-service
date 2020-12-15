@@ -18,7 +18,8 @@ app.use(parser.urlencoded({
 app.use('/', express.json());
 app.use('/listings/:id', express.static(path.join(__dirname, '..', 'client', 'dist')));
 
-app.get('/api/listings/:id', db.getBookingsByListingId);
+app.get('/api/listings/:id', db.getListing);
+app.get('/api/listings/:id/reservations', db.getBookingsByListingId);
 app.post('/bookings/:id', db.createBooking);
 app.put('/bookings/:id', db.updateBooking);
 app.delete('/bookings/:id', db.deleteBooking);

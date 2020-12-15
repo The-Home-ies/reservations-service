@@ -1,5 +1,11 @@
 const pool = require('../config/pool');
 
+const getListing = (req, res) => {
+  const listingId = req.params.id;
+  pool.query(`SELECT * FROM listings WHERE id = '${listingId}'`)
+    .then(results => res.status(200).json(results.rows))
+    .catch(err => console.error(err));
+};
 
 const getBookingsByListingId = (req, res) => {
   const listingId = req.params.id;
@@ -53,6 +59,7 @@ const deleteBooking = (req, res) => {
 }
 
 module.exports = {
+  getListing,
   getBookingsByListingId,
   createBooking,
   updateBooking,

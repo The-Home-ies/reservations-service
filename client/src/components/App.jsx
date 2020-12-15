@@ -90,12 +90,13 @@ function App() {
     infantsNum,
     guestsBool,
   };
+  console.log('listing data', listingData)
   return (
     <div className={styles.mainContainer}>
       <div className={styles.mainGrid}>
         <span className={styles.mainPrice}>
           <span id={styles.mainPriceAmount}>
-            {`$${listingData === undefined ? '' : listingData[0].fees.pernight}`}
+            {`$${listingData === undefined ? '' : listingData[0].per_night}`}
           </span>
           <span id={styles.mainPricePerNight}>/ night</span>
         </span>
