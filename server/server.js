@@ -14,7 +14,7 @@ app.use(parser.urlencoded({
     extended: true,
   })
 );
-app.use('/loaderio-0149e6d39b7b67e407ffe5bb88e6e425', express.static(path.join(__dirname, '..', 'loaderio-0149e6d39b7b67e407ffe5bb88e6e425')))
+app.use('/loaderio-0149e6d39b7b67e407ffe5bb88e6e425', express.static(path.join(__dirname, '..', 'loader')));
 app.use('/', express.json());
 app.use('/listings/:id', express.static(path.join(__dirname, '..', 'client', 'dist')));
 
