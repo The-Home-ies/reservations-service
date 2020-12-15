@@ -1,0 +1,22 @@
+version: '3'
+services:
+  reservations:
+    build: reservations-service/
+    ports: 
+      - '3002:3002'
+
+  database:
+    image: postgres:13
+    env_file:
+      - database.env # configure postgres
+    volumes:
+      - /var/lib/postgresql/data/ # persist data even if container shuts down
+    ports:
+      - '5432:5432'
+
+  nginx:
+    build: reservations-service/nginx/
+    depends_on:
+      - 'reservations'
+    ports:
+      - '80:80'
