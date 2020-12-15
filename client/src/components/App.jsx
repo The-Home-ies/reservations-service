@@ -90,7 +90,6 @@ function App() {
     infantsNum,
     guestsBool,
   };
-  console.log('listing data', listingData)
   return (
     <div className={styles.mainContainer}>
       <div className={styles.mainGrid}>
