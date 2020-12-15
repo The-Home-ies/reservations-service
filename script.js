@@ -1,7 +1,9 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Rate } from 'k6/metrics';
 
 const getRandomNum = () => Math.floor(Math.random() * 1000000 + 1);
+export const errorRate = new Rate('errors');
 
 export const options = {
   stages: [
@@ -25,7 +27,8 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get(`http://localhost:3002/${getRandomNum()}`, { timeout: 180000 });
-  check(res, { 'status was 200': (r) => r.status == 200 });
+  const res = http.get(`http://localhost:3002/api/listings/${getRandomNum()}`, { timeout: 180000 });
+  const result = check(res, { 'status was 200': (r) => r.status == 200 });
+  errorRate.add(!result);
   sleep(1);
 }
