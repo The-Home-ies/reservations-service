@@ -1,4 +1,4 @@
-const pool = require('../config/pool.js');
+const pool = require('../config/pool');
 
 
 const getBookingsByListingId = (req, res) => {
